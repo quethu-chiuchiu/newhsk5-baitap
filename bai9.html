@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài 9 · 别样鲁迅 | Luyện tập HSK5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<script src="./quiz.js"></script>
+</head>
+<body class="lesson-body">
+
+<div class="lesson-main">
+
+  <div class="lesson-heading">
+    <span class="badge">Bài 9 · 练习册 Workbook</span>
+    <h1><span class="zh">别样鲁迅</span></h1>
+    <p>Một Lỗ Tấn khác</p>
+  </div>
+
+  <!-- ============ NGHE (Listening) ============ -->
+  <section class="tab-section" data-tab="listening">
+    <section class="card">
+      <div class="section-head">
+        <div class="icon">🎧</div>
+        <h2>Nghe hiểu <span class="zh">一、听力 Listening</span></h2>
+      </div>
+
+      <!-- Part I -->
+      <div class="part">
+        <div class="part-title">第一部分 Part I</div>
+        <div class="part-instructions">第1–6题：请选出正确答案。 — Nghe rồi chọn đáp án đúng.</div>
+        <div class="audio-master">
+          <span class="label">🎧 Audio phần 1 (câu 1–6)</span>
+          <audio controls preload="none" src="audio/bai9/listening_1.mp3"></audio>
+        </div>
+        <div id="l-p1"></div>
+      </div>
+
+      <!-- Part II -->
+      <div class="part">
+        <div class="part-title">第二部分 Part II</div>
+        <div class="part-instructions">第7–14题：请选出正确答案。 — Nghe rồi chọn đáp án đúng.</div>
+        <div class="audio-master">
+          <span class="label">🎧 Audio phần 2 (câu 7–14)</span>
+          <audio controls preload="none" src="audio/bai9/listening_2.mp3"></audio>
+        </div>
+        <div id="l-p2"></div>
+      </div>
+
+      <div class="score-bar" id="l-score-bar" style="display:none;">
+        <div class="score-panel">
+          <span class="txt" id="l-score">0 / 14 câu</span>
+          <button class="btn btn-primary" id="l-grade">Chấm điểm</button>
+          <button class="btn btn-ghost" id="l-reset">Làm lại</button>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ ĐỌC (Reading) ============ -->
+  <section class="tab-section" data-tab="reading">
+    <section class="card">
+      <div class="section-head">
+        <div class="icon">📖</div>
+        <h2>Đọc hiểu <span class="zh">二、阅读 Reading</span></h2>
+      </div>
+      <p class="section-note">Chọn đáp án rồi bấm <b>“Chấm điểm”</b> ở thanh dưới cùng để tự kiểm tra.</p>
+
+      <!-- Part I -->
+      <div class="part">
+        <div class="part-title">第一部分 Part I</div>
+        <div class="part-instructions">第15–18题：请选出正确答案。 — Chọn từ đúng cho mỗi chỗ trống trong đoạn văn.</div>
+        <div id="r-p1"></div>
+      </div>
+
+      <!-- Part II -->
+      <div class="part">
+        <div class="part-title">第二部分 Part II</div>
+        <div class="part-instructions">第19–22题：请选出与试题内容一致的一项。 — Chọn câu đúng với nội dung đoạn văn.</div>
+        <div id="r-p2"></div>
+      </div>
+
+      <!-- Part III -->
+      <div class="part">
+        <div class="part-title">第三部分 Part III</div>
+        <div class="part-instructions">第23–28题：请选出正确答案。 — Đọc đoạn văn và chọn đáp án đúng.</div>
+        <div id="r-p3"></div>
+      </div>
+
+      <div class="score-bar">
+        <div class="score-panel">
+          <span class="txt" id="r-score">0 / 14 câu</span>
+          <button class="btn btn-primary" id="r-grade">Chấm điểm</button>
+          <button class="btn btn-ghost" id="r-reset">Làm lại</button>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ VIẾT (Writing) ============ -->
+  <section class="tab-section" data-tab="writing">
+    <section class="card">
+      <div class="section-head">
+        <div class="icon">✍️</div>
+        <h2>Viết <span class="zh">三、书写 Writing</span></h2>
+      </div>
+
+      <!-- Part I -->
+      <div class="part">
+        <div class="part-title">第一部分 Part I</div>
+        <div class="part-instructions">第29–31题：完成句子。 — Bấm lần lượt các từ để ghép thành câu đúng; bấm vào từ đã chọn để bỏ ra. Xong bấm "Chấm điểm".</div>
+        <div class="example-box">
+          例如：发表　这篇论文　什么时候　是　的<br>
+          <b>→ 这篇论文是什么时候发表的？</b>
+        </div>
+        <div id="w-p1"></div>
+
+        <div class="score-bar">
+          <div class="score-panel">
+            <span class="txt" id="w-score">0 / 3 câu</span>
+            <button class="btn btn-primary" id="w-grade">Chấm điểm</button>
+            <button class="btn btn-ghost" id="w-reset">Làm lại</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part II -->
+      <div class="part">
+        <div class="part-title">第二部分 Part II</div>
+        <div class="part-instructions">第32题：写短文。 — Phần này giáo viên chấm. Viết xong có thể bấm "Xem bài mẫu" để tham khảo.</div>
+        <div id="w-p2"></div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ TỪ VỰNG (Vocabulary game) ============ -->
+  <section class="tab-section" data-tab="vocab">
+    <section class="card">
+      <div class="section-head">
+        <div class="icon">📚</div>
+        <h2>Từ vựng <span class="zh">词汇 Vocabulary</span></h2>
+      </div>
+      <div id="vocab-root"></div>
+    </section>
+  </section>
+
+  <footer class="lesson-footer">
+    Tài liệu tham khảo từ 《HSK标准教程5（上）练习册》.
+  </footer>
+</div>
+
+<script>
+HSK.initTabs('listening');
+
+/* ---------------- NGHE: 2 audio, đáp án gốc trong audio/bai9/dap_an_nghe_bai9.txt ---------------- */
+const lP1 = document.getElementById('l-p1');
+[
+  {n:1, opts:["他只吃不做","他不会做饭","他很会种粮食","他很了解美食"]},
+  {n:2, opts:["女的是专家","女的是记者","女的很有想法","女的写了一篇文章"]},
+  {n:3, opts:["同意","拒绝","担心","委屈"]},
+  {n:4, opts:["不清楚","排名第一","排名最后","不方便说"]},
+  {n:5, opts:["资料并不宝贵","资料很难保存","已经保存好了","可以送给女的"]},
+  {n:6, opts:["作者是鲁迅","写于1924～1925年","是一部长篇小说","共收录11篇小说"]},
+].forEach(item=>lP1.appendChild(HSK.listeningRow(item.n, item.opts)));
+
+const lP2 = document.getElementById('l-p2');
+[
+  {n:7,  opts:["很豪华","他没有去过","适合朋友聚会","周末可能没座位"]},
+  {n:8,  opts:["她需要借钱","她已经借到钱","她没有办法赚钱","她不想跟男的借钱"]},
+  {n:9,  opts:["夫妻","朋友","同事","师生"]},
+  {n:10, opts:["自己家","小饭馆儿","学校食堂","高档酒店"]},
+  {n:11, opts:["齐国","鲁国","楚国","赵国"]},
+  {n:12, opts:["他创立了道家学派","他共有72个学生","他一直在家乡教学","他对后世影响很大"]},
+  {n:13, opts:["现代人","文学家","政治家","运动员"]},
+  {n:14, opts:["利用桶的重量","利用水的浮力","伸手进树洞去取","请大人们来帮忙"]},
+].forEach(item=>lP2.appendChild(HSK.listeningRow(item.n, item.opts)));
+
+window.HSK_PAGE = window.HSK_PAGE || {};
+/* File đáp án mỗi dòng dạng "1C". Chưa có file thì vẫn chọn được, chỉ ẩn thanh chấm điểm. */
+fetch('audio/bai9/dap_an_nghe_bai9.txt')
+  .then(r => r.ok ? r.text() : Promise.reject())
+  .then(text => HSK.parseAnswerKey(text))
+  .catch(() => null)
+  .then(answersDict => {
+    window.HSK_PAGE.listening = HSK.mountListeningQuiz('.tab-section[data-tab="listening"]', answersDict, {
+      questionNums: [1,2,3,4,5,6,7,8,9,10,11,12,13,14],
+      scoreBarId: 'l-score-bar', scoreTxtId: 'l-score', gradeBtnId: 'l-grade', resetBtnId: 'l-reset'
+    });
+  });
+
+/* ---------------- ĐỌC (tự chấm) ---------------- */
+const quiz = new HSK.Quiz({scoreTxtId:'r-score', gradeBtnId:'r-grade', resetBtnId:'r-reset'});
+const B = n => "<span class='blank'>"+n+"</span>";
+
+// Part I — điền chỗ trống trong đoạn văn (15–18)
+const rP1 = document.getElementById('r-p1');
+const clozeBlock = quiz.mountMCQBlock(rP1, 15,
+  "<p>新员工培训的时候，为了在群体中比别人更早地"+B(15)+"出自己的领导能力，很多人会"+B(16)+"着做事，希望占据主动地位。其实，"+B(17)+"。你应该把更多的心思花在如何完成任务上，想办法提出比别人更有价值的操作方式；另外，领导力并不等于事事都要"+B(18)+"去做，而是要懂得如何信任和尊重自己的团队成员，让每个人发挥自己的作用。</p>",
+  "", {A:"表演",B:"显得",C:"表现",D:"表达"}, "C");
+quiz.appendMCQToBlock(clozeBlock, 16, "", {A:"挣",B:"抢",C:"挡",D:"摸"}, "B");
+quiz.appendMCQToBlock(clozeBlock, 17, "", {A:"这种做法是对的",B:"没有人会这样做",C:"培训以后才应该这样",D:"这种做法并不正确"}, "D");
+quiz.appendMCQToBlock(clozeBlock, 18, "", {A:"亲自",B:"亲口",C:"各自",D:"个人"}, "A");
+
+// Part II — chọn câu đúng với nội dung (19–22)
+const rP2 = document.getElementById('r-p2');
+quiz.mountMCQBlock(rP2, 19,
+  "鲁迅大方好客且喜欢美食，常与朋友三五个人一起边吃边聊。有时甚至会直接让广和居送外卖到家里，在家招待朋友。当然最重要的还是因为广和居有鲁迅喜欢的菜。那里的菜既有高档的，也有适合普通百姓的，样样都让人有胃口。",
+  "", {A:"鲁迅喜欢独自享受美食",B:"鲁迅喜欢广和居的环境",C:"广和居有外卖服务",D:"广和居的菜价较贵"}, "C");
+quiz.mountMCQBlock(rP2, 20,
+  "徐霞客是明末地理学家，经34年旅行，写有名山游记17篇和《浙游日记》等多部著作，除佚散者外，剩有60余万字游记资料，死后由他人整理成《徐霞客游记》。世传本有10卷、12卷、20卷等数种，主要按日记述作者1613—1639年间旅行观察所得，对地理、水文、地质、植物等现象，均做了详细记录，在地理学和文学上都有重要的价值。",
+  "", {A:"徐霞客是清朝人",B:"《徐霞客游记》是一部著名小说",C:"《徐霞客游记》是他晚年的著作",D:"《徐霞客游记》记录了他旅行观察所得"}, "D");
+quiz.mountMCQBlock(rP2, 21,
+  "1970年，威廉·莎士比亚登上了英镑纸币。此后，纸币上相继迎来了大批文化名人。目前，英国人使用的20英镑纸币上印着的是英国著名经济学家亚当·斯密，这一点儿也不令人感到意外。不过，在未来的三到五年里，我们将看到市面流通的20英镑上出现某位艺术家的肖像。至于是谁，我们还不知道，但可以肯定的是，这位艺术家一定是非常受人欢迎的，因为他（她）将从公众提名中产生。",
+  "", {A:"莎士比亚是第一位肖像被印在英镑上的文化名人",B:"亚当·斯密是英国一位著名的艺术家",C:"出现在新英镑上的艺术家人选已确定",D:"出现在新英镑上的艺术家由政府选出"}, "A");
+quiz.mountMCQBlock(rP2, 22,
+  "本书共选入郁达夫诗歌180余首、散文47篇。郁达夫的诗歌，绝大多数是旧体诗词，其中不乏优秀之作。这些旧体诗歌，雄浑瑰丽，佳句迭出，既闪烁着中国古典诗歌的神韵，又流动着新鲜浓烈的现代生活气息，为这位现代作家赢得了令人艳羡的显赫诗名。这在20世纪中国文学史上也是稀有的现象。",
+  "", {A:"本书是郁达夫的诗歌集",B:"郁达夫写的主要是现代诗",C:"郁达夫的诗在文学史上地位不高",D:"郁达夫的诗有传统的形式、现代的内容"}, "D");
+
+// Part III — đoạn văn dài, mỗi đoạn 3 câu (23–25, 26–28)
+const rP3 = document.getElementById('r-p3');
+const IMG = (base, alt) => "<img class='passage-img' src='"+base+".webp' data-base='"+base+"' alt='"+alt+"' onerror='HSK.imgFallback(this)'>";
+
+const block23 = quiz.mountMCQBlock(rP3, 23,
+  "<span class='passage-num'>23~25.</span>" +
+  "<p>东晋时期有个叫王忱的人，他在少年时代就显露出才气，很受亲友的推崇。</p>" +
+  "<p>他的舅父范宁，是当时著名的学者，对王忱也很器重，有著名文士拜访，他总让王忱到场接待。有一次，王忱去看望舅父，遇到了比他早出名的张玄。范宁要他俩交流交流。张玄早就听说王忱志趣不凡，很想与他交谈。他年龄比王忱要大，自然希望王忱先跟自己打招呼，就整理好衣服，端端正正地坐着等候。不料，王忱见张玄这等模样，也默默坐着，一言不发。张玄见他这样，自己又放不下架子，对坐了一会，闷闷不乐地离去了。事后，范宁责备王忱说：“张玄是吴中的优秀人才，你为什么不好好与他谈谈？”王忱傲慢地回答说：“他要是真心想和我来往，完全可以来找我谈嘛。”范宁听了这话，倒反而称赞起外甥来了：“你这样才华出众，真是后起之秀。”王忱笑着回答说：“没有您这样的舅父，哪来我这样的外甥？”</p>",
+  "范宁是王忱的：", {A:"老师",B:"朋友",C:"舅舅",D:"外甥"}, "C");
+quiz.appendMCQToBlock(block23, 24, "张玄为什么不主动跟王忱打招呼？", {A:"他不认识王忱",B:"他的年龄比王忱大",C:"他看不起王忱",D:"他的衣服还没整理好"}, "B");
+quiz.appendMCQToBlock(block23, 25, "范宁用“后起之秀”这个词来表示对王忱的：", {A:"责备",B:"批评",C:"怀疑",D:"欣赏"}, "D");
+
+const block26 = quiz.mountMCQBlock(rP3, 26,
+  "<span class='passage-num'>26~28.</span>" + IMG("images/bai9/r26", "Chân dung Lỗ Tấn") +
+  "<p>1926年在厦门大学教书时，鲁迅先生曾到一家理发店理发。理发师不认识鲁迅，见他衣着简朴，就穿着一件旧长袍和一双旧布鞋，心想他肯定没几个钱。于是，理发师冷冰冰地叫鲁迅坐下，马马虎虎地给理了个发。对此，鲁迅不仅没有生气，反而在理完后极随意地掏出一大把钱给他，数也没数就出门离开了。理发师一点钱数，远远超出了应付的数额，不禁喜形于色。</p>" +
+  "<p>过了一段日子，鲁迅又来到这家理发店。理发师一眼就认出了他，立即迎上去献殷勤。虽然鲁迅仍是上次那身打扮，但理发师拿出了全部看家本领，满脸写着谦恭，慢工细活地做，足足用了一个多小时，还不时敬烟递茶。不料理毕，鲁迅并没有再显豪爽，而是照价付款，一个子也没多给。</p>" +
+  "<p>理发师觉得很奇怪：“先生，您上回那样给，今天怎么这样给？”鲁迅笑笑：“您上回给我乱剪，所以我也就乱给；这回您认认真真地理，我就规规矩矩地给了。”理发师听了大窘。</p>",
+  "第一次理发师态度为什么不好？", {A:"他心情不好",B:"他急着出门",C:"鲁迅穿得不像有钱人",D:"鲁迅没给够钱"}, "C");
+quiz.appendMCQToBlock(block26, 27, "第二次鲁迅先生为什么没有多给钱？", {A:"他带的钱不够",B:"他觉得理得不好",C:"他没有抽烟喝茶",D:"他要教训理发师"}, "D");
+quiz.appendMCQToBlock(block26, 28, "第二次鲁迅付款以后，理发师非常：", {A:"高兴",B:"不解",C:"生气",D:"平静"}, "B");
+
+quiz.bindButtons();
+
+/* ---------------- VIẾT ---------------- */
+// Part I — sắp xếp từ thành câu (tự chấm, bỏ qua dấu câu)
+const quizW = new HSK.Quiz({scoreTxtId:'w-score', gradeBtnId:'w-grade', resetBtnId:'w-reset'});
+const wP1 = document.getElementById('w-p1');
+quizW.mountSentenceOrder(wP1, 29, ["因为","而","他","戒了酒","胃病"], ["他因为胃病而戒了酒。"]);
+quizW.mountSentenceOrder(wP1, 30, ["地道的","你","这","快尝尝","传统点心"], ["你快尝尝这地道的传统点心。"]);
+quizW.mountSentenceOrder(wP1, 31, ["他","平均","要","招待一次客人","每两个星期"], ["他平均每两个星期要招待一次客人。"]);
+quizW.bindButtons();
+
+// Part II — viết đoạn văn khoảng 80 chữ (giáo viên chấm)
+HSK.mountEssay(document.getElementById('w-p2'), 32,
+  ["表现","大方","形象","作为","曾经"], 80,
+  "Bài mẫu tham khảo:<p class='zh'><b>在很多人心中，鲁迅的形象是严肃的。可是我曾经读过一篇文章，才知道生活中的鲁迅非常大方好客，常常请朋友吃饭。作为一位伟大的作家，他不但在文学上表现突出，在生活中也很有人情味。这让我对鲁迅有了新的认识。</b></p>");
+
+/* Cho trang index.html đọc bài làm khi bấm "Nộp và in kết quả" (listening được gán sau khi tải đáp án) */
+window.HSK_PAGE.lessonId = "bai9";
+window.HSK_PAGE.lessonName = "Bài 9 · 别样鲁迅";
+window.HSK_PAGE.reading = quiz;
+window.HSK_PAGE.writingOrder = quizW;
+
+/* ---------------- TỪ VỰNG — 生词 Bài 9 (38 từ) ---------------- */
+const VOCAB_LIST = [
+  {hanzi:"表现", pinyin:"biǎoxiàn", mean:"thể hiện; biểu hiện"},
+  {hanzi:"突出", pinyin:"tūchū", mean:"nổi bật, nổi trội"},
+  {hanzi:"文学家", pinyin:"wénxuéjiā", mean:"nhà văn"},
+  {hanzi:"算", pinyin:"suàn", mean:"coi là, xem là"},
+  {hanzi:"地道", pinyin:"dìdao", mean:"đích thực, chính cống"},
+  {hanzi:"行家", pinyin:"hángjia", mean:"người trong nghề, người thạo nghề"},
+  {hanzi:"亲自", pinyin:"qīnzì", mean:"tự, đích thân"},
+  {hanzi:"见解", pinyin:"jiànjiě", mean:"cách nhìn, quan niệm"},
+  {hanzi:"近代", pinyin:"jìndài", mean:"thời cận đại"},
+  {hanzi:"时尚", pinyin:"shíshàng", mean:"mốt, thời trang"},
+  {hanzi:"写作", pinyin:"xiězuò", mean:"sáng tác"},
+  {hanzi:"点心", pinyin:"diǎnxin", mean:"bánh ngọt, điểm tâm"},
+  {hanzi:"作为", pinyin:"zuòwéi", mean:"coi như; với tư cách"},
+  {hanzi:"学问", pinyin:"xuéwen", mean:"tri thức, học thức"},
+  {hanzi:"讲究", pinyin:"jiǎngjiu", mean:"chú ý, chú trọng; đẹp đẽ"},
+  {hanzi:"平均", pinyin:"píngjūn", mean:"tính trung bình"},
+  {hanzi:"胡同", pinyin:"hútòng", mean:"ngõ hẻm"},
+  {hanzi:"位于", pinyin:"wèiyú", mean:"nằm ở"},
+  {hanzi:"首", pinyin:"shǒu", mean:"người (vật) đứng đầu; bài"},
+  {hanzi:"豪华", pinyin:"háohuá", mean:"sang trọng, lộng lẫy"},
+  {hanzi:"光临", pinyin:"guānglín", mean:"đến dự, hay lui tới"},
+  {hanzi:"交际", pinyin:"jiāojì", mean:"xã giao, sự giao thiệp"},
+  {hanzi:"大方", pinyin:"dàfang", mean:"rộng rãi, hào phóng"},
+  {hanzi:"好客", pinyin:"hàokè", mean:"hiếu khách, mến khách"},
+  {hanzi:"呼朋唤友", pinyin:"hūpéng huànyǒu", mean:"mời mọc bạn bè, tập hợp bạn bè"},
+  {hanzi:"招待", pinyin:"zhāodài", mean:"chiêu đãi, thết đãi"},
+  {hanzi:"高档", pinyin:"gāodàng", mean:"hảo hạng, cao cấp"},
+  {hanzi:"胃口", pinyin:"wèikǒu", mean:"khẩu vị, sự thèm ăn"},
+  {hanzi:"明明", pinyin:"míngmíng", mean:"rõ ràng, chắc chắn"},
+  {hanzi:"胃", pinyin:"wèi", mean:"dạ dày, bao tử"},
+  {hanzi:"戒", pinyin:"jiè", mean:"cai, bỏ"},
+  {hanzi:"保存", pinyin:"bǎocún", mean:"giữ gìn, bảo tồn"},
+  {hanzi:"资料", pinyin:"zīliào", mean:"tài liệu, tư liệu"},
+  {hanzi:"曾经", pinyin:"céngjīng", mean:"đã từng"},
+  {hanzi:"形容", pinyin:"xíngróng", mean:"hình dung, miêu tả"},
+  {hanzi:"蒙眬", pinyin:"ménglóng", mean:"lờ mờ, mơ màng, mờ ảo"},
+  {hanzi:"悠悠", pinyin:"yōuyōu", mean:"thong thả, ung dung"},
+  {hanzi:"形象", pinyin:"xíngxiàng", mean:"sinh động"}
+];
+HSK.mountVocabGame('#vocab-root', VOCAB_LIST, { lessonId: "bai9" });
+</script>
+</body>
+</html>

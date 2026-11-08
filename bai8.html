@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài 8 · “朝三暮四”的古今义 | Luyện tập HSK5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<script src="./quiz.js"></script>
+</head>
+<body class="lesson-body">
+
+<div class="lesson-main">
+
+  <div class="lesson-heading">
+    <span class="badge">Bài 8 · 练习册 Workbook</span>
+    <h1><span class="zh">“朝三暮四”的古今义</span></h1>
+    <p>Nghĩa xưa và nay của “Triêu tam mộ tứ”</p>
+  </div>
+
+  <!-- ============ NGHE (Listening) ============ -->
+  <section class="tab-section" data-tab="listening">
+    <section class="card">
+      <div class="section-head">
+        <div class="icon">🎧</div>
+        <h2>Nghe hiểu <span class="zh">一、听力 Listening</span></h2>
+      </div>
+
+      <!-- Part I -->
+      <div class="part">
+        <div class="part-title">第一部分 Part I</div>
+        <div class="part-instructions">第1–6题：请选出正确答案。 — Nghe rồi chọn đáp án đúng.</div>
+        <div class="audio-master">
+          <span class="label">🎧 Audio phần 1 (câu 1–6)</span>
+          <audio controls preload="none" src="audio/bai8/listening_1.mp3"></audio>
+        </div>
+        <div id="l-p1"></div>
+      </div>
+
+      <!-- Part II -->
+      <div class="part">
+        <div class="part-title">第二部分 Part II</div>
+        <div class="part-instructions">第7–14题：请选出正确答案。 — Nghe rồi chọn đáp án đúng.</div>
+        <div class="audio-master">
+          <span class="label">🎧 Audio phần 2 (câu 7–14)</span>
+          <audio controls preload="none" src="audio/bai8/listening_2.mp3"></audio>
+        </div>
+        <div id="l-p2"></div>
+      </div>
+
+      <div class="score-bar" id="l-score-bar" style="display:none;">
+        <div class="score-panel">
+          <span class="txt" id="l-score">0 / 14 câu</span>
+          <button class="btn btn-primary" id="l-grade">Chấm điểm</button>
+          <button class="btn btn-ghost" id="l-reset">Làm lại</button>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ ĐỌC (Reading) ============ -->
+  <section class="tab-section" data-tab="reading">
+    <section class="card">
+      <div class="section-head">
+        <div class="icon">📖</div>
+        <h2>Đọc hiểu <span class="zh">二、阅读 Reading</span></h2>
+      </div>
+      <p class="section-note">Chọn đáp án rồi bấm <b>“Chấm điểm”</b> ở thanh dưới cùng để tự kiểm tra.</p>
+
+      <!-- Part I -->
+      <div class="part">
+        <div class="part-title">第一部分 Part I</div>
+        <div class="part-instructions">第15–18题：请选出正确答案。 — Chọn từ đúng cho mỗi chỗ trống trong đoạn văn.</div>
+        <div id="r-p1"></div>
+      </div>
+
+      <!-- Part II -->
+      <div class="part">
+        <div class="part-title">第二部分 Part II</div>
+        <div class="part-instructions">第19–22题：请选出与试题内容一致的一项。 — Chọn câu đúng với nội dung đoạn văn.</div>
+        <div id="r-p2"></div>
+      </div>
+
+      <!-- Part III -->
+      <div class="part">
+        <div class="part-title">第三部分 Part III</div>
+        <div class="part-instructions">第23–28题：请选出正确答案。 — Đọc đoạn văn và chọn đáp án đúng.</div>
+        <div id="r-p3"></div>
+      </div>
+
+      <div class="score-bar">
+        <div class="score-panel">
+          <span class="txt" id="r-score">0 / 14 câu</span>
+          <button class="btn btn-primary" id="r-grade">Chấm điểm</button>
+          <button class="btn btn-ghost" id="r-reset">Làm lại</button>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ VIẾT (Writing) ============ -->
+  <section class="tab-section" data-tab="writing">
+    <section class="card">
+      <div class="section-head">
+        <div class="icon">✍️</div>
+        <h2>Viết <span class="zh">三、书写 Writing</span></h2>
+      </div>
+
+      <!-- Part I -->
+      <div class="part">
+        <div class="part-title">第一部分 Part I</div>
+        <div class="part-instructions">第29–31题：完成句子。 — Bấm lần lượt các từ để ghép thành câu đúng; bấm vào từ đã chọn để bỏ ra. Xong bấm "Chấm điểm".</div>
+        <div class="example-box">
+          例如：发表　这篇论文　什么时候　是　的<br>
+          <b>→ 这篇论文是什么时候发表的？</b>
+        </div>
+        <div id="w-p1"></div>
+
+        <div class="score-bar">
+          <div class="score-panel">
+            <span class="txt" id="w-score">0 / 3 câu</span>
+            <button class="btn btn-primary" id="w-grade">Chấm điểm</button>
+            <button class="btn btn-ghost" id="w-reset">Làm lại</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part II -->
+      <div class="part">
+        <div class="part-title">第二部分 Part II</div>
+        <div class="part-instructions">第32题：写短文。 — Phần này giáo viên chấm. Viết xong có thể bấm "Xem bài mẫu" để tham khảo.</div>
+        <div id="w-p2"></div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ TỪ VỰNG (Vocabulary game) ============ -->
+  <section class="tab-section" data-tab="vocab">
+    <section class="card">
+      <div class="section-head">
+        <div class="icon">📚</div>
+        <h2>Từ vựng <span class="zh">词汇 Vocabulary</span></h2>
+      </div>
+      <div id="vocab-root"></div>
+    </section>
+  </section>
+
+  <footer class="lesson-footer">
+    Tài liệu tham khảo từ 《HSK标准教程5（上）练习册》.
+  </footer>
+</div>
+
+<script>
+HSK.initTabs('listening');
+
+/* ---------------- NGHE: 2 audio, đáp án gốc trong audio/bai8/dap_an_nghe_bai8.txt ---------------- */
+const lP1 = document.getElementById('l-p1');
+[
+  {n:1, opts:["语音","汉字","词汇","语法"]},
+  {n:2, opts:["堵车了","门口人多","没抢到票","被人拦住了"]},
+  {n:3, opts:["双音节词增加了","双音节词减少了","多音节词增加了","多音节词减少了"]},
+  {n:4, opts:["抱怨的","惭愧的","鼓励的","无奈的"]},
+  {n:5, opts:["太小","很好","很特别","太贵了"]},
+  {n:6, opts:["别限制他","他要减肥","女的在胡说","他吃得不多"]},
+].forEach(item=>lP1.appendChild(HSK.listeningRow(item.n, item.opts)));
+
+const lP2 = document.getElementById('l-p2');
+[
+  {n:7,  opts:["夫妻","母子","同事","师生"]},
+  {n:8,  opts:["主食","蔬菜","肉类","水果"]},
+  {n:9,  opts:["抱怨","委屈","询问","安慰"]},
+  {n:10, opts:["已经想了很多办法","已经试过这个办法","这是最好的方式","还需要更多时间"]},
+  {n:11, opts:["盲人摸象","朝三暮四","全神贯注","相敬如宾"]},
+  {n:12, opts:["结构特点","意义特点","使用特点","历史特点"]},
+  {n:13, opts:["来尝兔子兄弟的饼","来看兔子兄弟的饼","来帮兔子兄弟分饼","来送给兔子兄弟饼"]},
+  {n:14, opts:["狐狸","兔哥哥","兔弟弟","都没吃到"]},
+].forEach(item=>lP2.appendChild(HSK.listeningRow(item.n, item.opts)));
+
+window.HSK_PAGE = window.HSK_PAGE || {};
+/* File đáp án mỗi dòng dạng "1C". Chưa có file thì vẫn chọn được, chỉ ẩn thanh chấm điểm. */
+fetch('audio/bai8/dap_an_nghe_bai8.txt')
+  .then(r => r.ok ? r.text() : Promise.reject())
+  .then(text => HSK.parseAnswerKey(text))
+  .catch(() => null)
+  .then(answersDict => {
+    window.HSK_PAGE.listening = HSK.mountListeningQuiz('.tab-section[data-tab="listening"]', answersDict, {
+      questionNums: [1,2,3,4,5,6,7,8,9,10,11,12,13,14],
+      scoreBarId: 'l-score-bar', scoreTxtId: 'l-score', gradeBtnId: 'l-grade', resetBtnId: 'l-reset'
+    });
+  });
+
+/* ---------------- ĐỌC (tự chấm) ---------------- */
+const quiz = new HSK.Quiz({scoreTxtId:'r-score', gradeBtnId:'r-grade', resetBtnId:'r-reset'});
+const B = n => "<span class='blank'>"+n+"</span>";
+
+// Part I — điền chỗ trống trong đoạn văn (15–18)
+const rP1 = document.getElementById('r-p1');
+const clozeBlock = quiz.mountMCQBlock(rP1, 15,
+  "<p>如果你常常在手机或电脑上跟人聊天儿的话，相信你除了输入文字，一定也用过"+B(15)+"。有了它，互联网时代的我们变得越来越懒。以前我们想要表达一种意思，比如"+B(16)+"，可能需要花时间打出一句"+B(17)+"的话；而现在，只要轻松地点一个笑脸就好了。不过，也有专业人士怀疑它的发展前景，他们"+B(18)+"并不认为这种方式能够一直被大范围应用下去。</p>",
+  "", {A:"表演",B:"表情",C:"表面",D:"表达"}, "B");
+quiz.appendMCQToBlock(clozeBlock, 16, "", {A:"我很生气",B:"我很吃惊",C:"我很高兴",D:"我很伤心"}, "C");
+quiz.appendMCQToBlock(clozeBlock, 17, "", {A:"完整",B:"整齐",C:"整个",D:"整体"}, "A");
+quiz.appendMCQToBlock(clozeBlock, 18, "", {A:"相信",B:"相似",C:"似的",D:"似乎"}, "D");
+
+// Part II — chọn câu đúng với nội dung (19–22)
+const rP2 = document.getElementById('r-p2');
+quiz.mountMCQBlock(rP2, 19,
+  "从前有位老人，他很喜欢动物，便喂养了一群猴子当宠物。相处久了，他们的关系越来越好，彼此居然可以从表情、声音和行为举止中了解对方的意思。所以，虽然猴子不会说话，他们仍然可以很好地交流。",
+  "", {A:"老人把猴子当朋友",B:"他们通过语言互相交流",C:"他们之间的关系不太好",D:"他们能理解对方的意思"}, "D");
+quiz.mountMCQBlock(rP2, 20,
+  "你永远是别人嘴里的故事，而别人的故事又永远在你的嘴里。结果故事从你的嘴到别人的耳朵，然后再从别人的嘴到另一个人的耳朵，就这样一路流传下去。最后你会听到你的故事，是一个热心的人好意过来告诉你的。你听完了，却不知道那是你的故事，因为在你的身上，从来没有发生过如他嘴里所叙述的那样的故事。到底那是谁的故事？噢，原来是集体创作。",
+  "", {A:"每个人都喜欢给别人讲故事",B:"大家希望别人知道自己的故事",C:"故事在流传的过程中会有变化",D:"大家一起商量写了一个故事"}, "C");
+quiz.mountMCQBlock(rP2, 21,
+  "恋人们之间彼此常有亲昵的称呼。有的国家，恋人用小动物相称，如维也纳人称自己的心上人为“我的小蜗牛”；有的国家以植物相称，如日本人称其恋人为“美丽的山花”；还有的国家用食物称呼自己的情人，如美国人叫“蜜糖”，波兰人称“饼干”。",
+  "", {A:"每对恋人之间都有昵称",B:"蜗牛是一种植物的名称",C:"“美丽的山花”是日本人用的",D:"“蜜糖、饼干”都是人的名字"}, "C");
+quiz.mountMCQBlock(rP2, 22,
+  "强烈的需要会成为某一时期消费行为的决定性力量。但是，某一需要最终转换为消费行为还取决于消费者个人的习惯、个性和家庭的收入总水平与财产额的高低，以及家庭规模与结构的特点。",
+  "", {A:"消费行为与需要无关",B:"消费行为与财产有关",C:"消费行为与性别有关",D:"消费行为与收入无关"}, "B");
+
+// Part III — đoạn văn dài, mỗi đoạn 3 câu (23–25, 26–28)
+const rP3 = document.getElementById('r-p3');
+const IMG = (base, alt) => "<img class='passage-img' src='"+base+".webp' data-base='"+base+"' alt='"+alt+"' onerror='HSK.imgFallback(this)'>";
+
+const block23 = quiz.mountMCQBlock(rP3, 23,
+  "<span class='passage-num'>23~25.</span>" +
+  "<p>就讲单一语言的人口而言，汉语是世界上最大的语种，以汉语为母语的人有十几亿。</p>" +
+  "<p>我们平时说的汉语，其实更多时候指的是普通话。普通话是中国不同民族间进行沟通交流的通用语言，以北京语音为标准音，以北方话为基础方言，以典范的现代白话文著作为语法规范。而汉语中还包括很多方言，如北方方言、吴方言、粤方言、闽方言、赣方言、湘方言和客家话。</p>" +
+  "<p>汉语缺少严格意义的形态变化，这是汉语和印欧语言的根本区别，并由此产生了一系列其他特点：第一，同样的词，语序不同，组成的短语或句子就不一样。第二，汉语词类和句法成分的关系复杂，并不对应，如名词，既可以做主语、宾语，也可以做定语、状语，在一定的条件下甚至还可以做谓语。第三，音节的多少会影响语法形式，例如，有些双音节词就要求跟其他的双音节或多音节词一起使用，而不能用同样意义的单音节词，比如我们可以说“显得高兴、显得格外美丽”，但不能说“显得高”，必须说“显得很高”。</p>" +
+  "<p>随着社会的发展，汉语也处于不断的变化完善中。所以，要学好汉语，我们也必须关注汉语的新发展。</p>",
+  "“七大方言”<b>不包括</b>：", {A:"北方方言",B:"湘方言",C:"普通话",D:"客家话"}, "C");
+quiz.appendMCQToBlock(block23, 24, "下列哪项反映了汉语的语序特点？", {A:"汉语不说“三个学生们”",B:"“固定座位”和“座位固定”不同",C:"可以说“今天星期一”",D:"不能说“互相帮”"}, "B");
+quiz.appendMCQToBlock(block23, 25, "关于汉语的描述，下列哪项正确？", {A:"普通话以北京语音为标准音",B:"汉语属于印欧语言",C:"汉语词类与句法成分一一对应",D:"汉语是固定不变的"}, "A");
+
+const block26 = quiz.mountMCQBlock(rP3, 26,
+  "<span class='passage-num'>26~28.</span>" + IMG("images/bai8/r26", "Tượng Trương Khiên cưỡi ngựa") +
+  "<p>“不得要领”这个成语来源于《史记》。成语中的“要”，即“腰”，指衣腰；“领”指衣领。古人上衣下裳，提上衣时拿着衣领，提下裳时拿着腰的部分。所以“要领”比喻人的主要意思或态度。“不得要领”现在一般用来形容说话、写文章抓不住要点或关键。</p>" +
+  "<p>《史记》中记载了汉武帝初即位的时候，听说北方的月氏人对匈奴人怀着强烈的仇恨，他们想攻打匈奴，但得不到别国的帮助。当时，武帝正想消灭匈奴。听了这话，就招募了张骞作为使者，出使月氏。</p>" +
+  "<p>要到月氏去，必须经过匈奴，很不幸，张骞经过匈奴的时候被抓住了。匈奴的王把张骞扣留下来，并且对他说：“月氏在我们的西北，你们汉人怎么能穿过我们的地方，出使到那里去？如果我们要出使到越国去，你们能让我们去吗？”就这样，张骞被匈奴扣留了十多年，还在那里成了家，生了儿子。</p>" +
+  "<p>后来，匈奴放松了对张骞的监视，他就与随从们一起逃走了。在其他国家的帮助下，终于找到了月氏人西迁以后建立的大月氏。但是，现在月氏国人已经立了被杀国王的太子为新国王，在新土地上定居了下来。那里物产丰富，没有战争，他们只想过太平的日子，不再有向匈奴报复的心愿了。张骞谈的夹击匈奴的事月氏人并不感兴趣，他在那里停留了一年多，劝说一直抓不住要点，不得要领，始终不能得到月氏对与汉共击匈奴之事的明确表态，最后只得起程回国。</p>",
+  "“不得要领”中的“领”是指：", {A:"领带",B:"领导",C:"本领",D:"衣领"}, "D");
+quiz.appendMCQToBlock(block26, 27, "“不得要领”的故事发生在什么时候？", {A:"汉武帝在位的时候",B:"汉武帝攻打匈奴的时候",C:"建立大月氏的时候",D:"写《史记》的时候"}, "A");
+quiz.appendMCQToBlock(block26, 28, "为什么说张骞“不得要领”？", {A:"他被抓住了",B:"他在匈奴成了家",C:"他没有找对地方",D:"他没有把握劝说的要点"}, "D");
+
+quiz.bindButtons();
+
+/* ---------------- VIẾT ---------------- */
+// Part I — sắp xếp từ thành câu (tự chấm, bỏ qua dấu câu)
+const quizW = new HSK.Quiz({scoreTxtId:'w-score', gradeBtnId:'w-grade', resetBtnId:'w-reset'});
+const wP1 = document.getElementById('w-p1');
+quizW.mountSentenceOrder(wP1, 29, ["固定的","产品","有","这种","消费群体"], ["这种产品有固定的消费群体。"]);
+quizW.mountSentenceOrder(wP1, 30, ["把","完整地","请你","昨晚的经历","叙述一遍"], ["请你把昨晚的经历完整地叙述一遍。"]);
+quizW.mountSentenceOrder(wP1, 31, ["不","家庭的财力","他的需要","满足","能"], ["家庭的财力不能满足他的需要。"]);
+quizW.bindButtons();
+
+// Part II — viết đoạn văn khoảng 80 chữ (giáo viên chấm)
+HSK.mountEssay(document.getElementById('w-p2'), 32,
+  ["相处","对方","调皮","行为","似乎"], 80,
+  "Bài mẫu tham khảo:<p class='zh'><b>我家有一只小狗，它非常调皮，常常把我的鞋子藏起来。刚开始我很生气，可是相处久了，我发现它的很多行为都是想引起我的注意。现在，我们似乎能明白对方的意思：我一拿起绳子，它就知道要出去散步了。它已经成了我们家的一员。</b></p>");
+
+/* Cho trang index.html đọc bài làm khi bấm "Nộp và in kết quả" (listening được gán sau khi tải đáp án) */
+window.HSK_PAGE.lessonId = "bai8";
+window.HSK_PAGE.lessonName = "Bài 8 · “朝三暮四”的古今义";
+window.HSK_PAGE.reading = quiz;
+window.HSK_PAGE.writingOrder = quizW;
+
+/* ---------------- TỪ VỰNG — 生词 Bài 8 (43 từ) ---------------- */
+const VOCAB_LIST = [
+  {hanzi:"朝三暮四", pinyin:"zhāosān mùsì", mean:"sáng ba chiều bốn (thay đổi thất thường)"},
+  {hanzi:"词汇", pinyin:"cíhuì", mean:"từ vựng"},
+  {hanzi:"固定", pinyin:"gùdìng", mean:"cố định; ổn định"},
+  {hanzi:"结构", pinyin:"jiégòu", mean:"kết cấu, cấu trúc"},
+  {hanzi:"整体", pinyin:"zhěngtǐ", mean:"chỉnh thể, toàn thể"},
+  {hanzi:"综合", pinyin:"zōnghé", mean:"tổng hợp lại; tổng hợp"},
+  {hanzi:"完整", pinyin:"wánzhěng", mean:"hoàn chỉnh, trọn vẹn"},
+  {hanzi:"哲学家", pinyin:"zhéxuéjiā", mean:"nhà triết học"},
+  {hanzi:"寓言", pinyin:"yùyán", mean:"truyện ngụ ngôn"},
+  {hanzi:"喂养", pinyin:"wèiyǎng", mean:"nuôi"},
+  {hanzi:"群", pinyin:"qún", mean:"bầy, đàn (lượng từ)"},
+  {hanzi:"猴子", pinyin:"hóuzi", mean:"con khỉ"},
+  {hanzi:"宠物", pinyin:"chǒngwù", mean:"vật cưng, thú cưng"},
+  {hanzi:"相处", pinyin:"xiāngchǔ", mean:"chung sống"},
+  {hanzi:"彼此", pinyin:"bǐcǐ", mean:"hai bên"},
+  {hanzi:"表情", pinyin:"biǎoqíng", mean:"nét mặt, vẻ mặt"},
+  {hanzi:"行为", pinyin:"xíngwéi", mean:"hành vi, hành động"},
+  {hanzi:"对方", pinyin:"duìfāng", mean:"đối phương, phía bên kia"},
+  {hanzi:"蔬菜", pinyin:"shūcài", mean:"rau cải"},
+  {hanzi:"粮食", pinyin:"liángshi", mean:"lương thực"},
+  {hanzi:"家庭", pinyin:"jiātíng", mean:"gia đình"},
+  {hanzi:"财产", pinyin:"cáichǎn", mean:"tài sản, của cải"},
+  {hanzi:"消费", pinyin:"xiāofèi", mean:"tiêu thụ, tiêu dùng"},
+  {hanzi:"节省", pinyin:"jiéshěng", mean:"tiết kiệm, dành dụm"},
+  {hanzi:"限制", pinyin:"xiànzhì", mean:"hạn chế"},
+  {hanzi:"猪", pinyin:"zhū", mean:"heo"},
+  {hanzi:"调皮", pinyin:"tiáopí", mean:"nghịch ngợm, tinh nghịch"},
+  {hanzi:"淘气", pinyin:"táoqì", mean:"nghịch ngợm"},
+  {hanzi:"橡子", pinyin:"xiàngzi", mean:"quả đấu, hạt dẻ rừng"},
+  {hanzi:"果实", pinyin:"guǒshí", mean:"quả, trái cây"},
+  {hanzi:"不足", pinyin:"bùzú", mean:"thiếu; không đủ"},
+  {hanzi:"倒", pinyin:"dào", mean:"lại (trái với điều mong đợi)"},
+  {hanzi:"馒头", pinyin:"mántou", mean:"màn thầu, bánh bao không nhân"},
+  {hanzi:"颗", pinyin:"kē", mean:"hạt, viên (lượng từ)"},
+  {hanzi:"似乎", pinyin:"sìhū", mean:"dường như"},
+  {hanzi:"吃亏", pinyin:"chī kuī", mean:"chịu thiệt, thiệt thòi"},
+  {hanzi:"方式", pinyin:"fāngshì", mean:"phương thức, cách thức"},
+  {hanzi:"安慰", pinyin:"ānwèi", mean:"an ủi, dỗ dành"},
+  {hanzi:"要不", pinyin:"yàobù", mean:"nếu không thì"},
+  {hanzi:"显得", pinyin:"xiǎnde", mean:"tỏ ra, có vẻ"},
+  {hanzi:"格外", pinyin:"géwài", mean:"vô cùng, hết sức"},
+  {hanzi:"情景", pinyin:"qíngjǐng", mean:"tình cảnh, cảnh tượng"},
+  {hanzi:"哈", pinyin:"hā", mean:"ha ha (tiếng cười)"}
+];
+HSK.mountVocabGame('#vocab-root', VOCAB_LIST, { lessonId: "bai8" });
+</script>
+</body>
+</html>

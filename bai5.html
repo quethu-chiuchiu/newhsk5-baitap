@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài 5 · 济南的泉水 | Luyện tập HSK5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<script src="./quiz.js"></script>
+</head>
+<body class="lesson-body">
+
+<div class="lesson-main">
+
+  <div class="lesson-heading">
+    <span class="badge">Bài 5 · 练习册 Workbook</span>
+    <h1><span class="zh">济南的泉水</span></h1>
+    <p>Nước suối ở Tế Nam</p>
+  </div>
+
+  <!-- ============ NGHE (Listening) ============ -->
+  <section class="tab-section" data-tab="listening">
+    <section class="card">
+      <div class="section-head">
+        <div class="icon">🎧</div>
+        <h2>Nghe hiểu <span class="zh">一、听力 Listening</span></h2>
+      </div>
+
+      <!-- Part I -->
+      <div class="part">
+        <div class="part-title">第一部分 Part I</div>
+        <div class="part-instructions">第1–6题：请选出正确答案。 — Nghe rồi chọn đáp án đúng.</div>
+        <div class="audio-master">
+          <span class="label">🎧 Audio phần 1 (câu 1–6)</span>
+          <audio controls preload="none" src="audio/bai5/listening_1.mp3"></audio>
+        </div>
+        <div id="l-p1"></div>
+      </div>
+
+      <!-- Part II -->
+      <div class="part">
+        <div class="part-title">第二部分 Part II</div>
+        <div class="part-instructions">第7–14题：请选出正确答案。 — Nghe rồi chọn đáp án đúng.</div>
+        <div class="audio-master">
+          <span class="label">🎧 Audio phần 2 (câu 7–14)</span>
+          <audio controls preload="none" src="audio/bai5/listening_2.mp3"></audio>
+        </div>
+        <div id="l-p2"></div>
+      </div>
+
+      <div class="score-bar" id="l-score-bar" style="display:none;">
+        <div class="score-panel">
+          <span class="txt" id="l-score">0 / 14 câu</span>
+          <button class="btn btn-primary" id="l-grade">Chấm điểm</button>
+          <button class="btn btn-ghost" id="l-reset">Làm lại</button>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ ĐỌC (Reading) ============ -->
+  <section class="tab-section" data-tab="reading">
+    <section class="card">
+      <div class="section-head">
+        <div class="icon">📖</div>
+        <h2>Đọc hiểu <span class="zh">二、阅读 Reading</span></h2>
+      </div>
+      <p class="section-note">Chọn đáp án rồi bấm <b>“Chấm điểm”</b> ở thanh dưới cùng để tự kiểm tra.</p>
+
+      <!-- Part I -->
+      <div class="part">
+        <div class="part-title">第一部分 Part I</div>
+        <div class="part-instructions">第15–18题：请选出正确答案。 — Chọn từ đúng cho mỗi chỗ trống trong đoạn văn.</div>
+        <div id="r-p1"></div>
+      </div>
+
+      <!-- Part II -->
+      <div class="part">
+        <div class="part-title">第二部分 Part II</div>
+        <div class="part-instructions">第19–22题：请选出与试题内容一致的一项。 — Chọn câu đúng với nội dung đoạn văn.</div>
+        <div id="r-p2"></div>
+      </div>
+
+      <!-- Part III -->
+      <div class="part">
+        <div class="part-title">第三部分 Part III</div>
+        <div class="part-instructions">第23–28题：请选出正确答案。 — Đọc đoạn văn và chọn đáp án đúng.</div>
+        <div id="r-p3"></div>
+      </div>
+
+      <div class="score-bar">
+        <div class="score-panel">
+          <span class="txt" id="r-score">0 / 14 câu</span>
+          <button class="btn btn-primary" id="r-grade">Chấm điểm</button>
+          <button class="btn btn-ghost" id="r-reset">Làm lại</button>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ VIẾT (Writing) ============ -->
+  <section class="tab-section" data-tab="writing">
+    <section class="card">
+      <div class="section-head">
+        <div class="icon">✍️</div>
+        <h2>Viết <span class="zh">三、书写 Writing</span></h2>
+      </div>
+
+      <!-- Part I -->
+      <div class="part">
+        <div class="part-title">第一部分 Part I</div>
+        <div class="part-instructions">第29–31题：完成句子。 — Bấm lần lượt các từ để ghép thành câu đúng; bấm vào từ đã chọn để bỏ ra. Xong bấm "Chấm điểm".</div>
+        <div class="example-box">
+          例如：发表　这篇论文　什么时候　是　的<br>
+          <b>→ 这篇论文是什么时候发表的？</b>
+        </div>
+        <div id="w-p1"></div>
+
+        <div class="score-bar">
+          <div class="score-panel">
+            <span class="txt" id="w-score">0 / 3 câu</span>
+            <button class="btn btn-primary" id="w-grade">Chấm điểm</button>
+            <button class="btn btn-ghost" id="w-reset">Làm lại</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part II -->
+      <div class="part">
+        <div class="part-title">第二部分 Part II</div>
+        <div class="part-instructions">第32题：写短文。 — Phần này giáo viên chấm. Viết xong có thể bấm "Xem bài mẫu" để tham khảo.</div>
+        <div id="w-p2"></div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ TỪ VỰNG (Vocabulary game) ============ -->
+  <section class="tab-section" data-tab="vocab">
+    <section class="card">
+      <div class="section-head">
+        <div class="icon">📚</div>
+        <h2>Từ vựng <span class="zh">词汇 Vocabulary</span></h2>
+      </div>
+      <div id="vocab-root"></div>
+    </section>
+  </section>
+
+  <footer class="lesson-footer">
+    Tài liệu tham khảo từ 《HSK标准教程5（上）练习册》.
+  </footer>
+</div>
+
+<script>
+HSK.initTabs('listening');
+
+/* ---------------- NGHE: 2 audio, đáp án gốc trong audio/bai5/dap_an_nghe_bai5.txt ---------------- */
+const lP1 = document.getElementById('l-p1');
+[
+  {n:1, opts:["去电视台","做完作业","收拾阳台","洗洗衣服"]},
+  {n:2, opts:["女的不想干活儿","女的感冒都好了","男的不喜欢擦地","男的擦地不干净"]},
+  {n:3, opts:["要带孩子过去","请他招待朋友","要去北京看他","问候他的情况"]},
+  {n:4, opts:["出差","旅游","参加婚礼","看老同学"]},
+  {n:5, opts:["美食","风景","京剧","胡同"]},
+  {n:6, opts:["菜的味道很好","风景很有特色","感觉有些失望","比想象的美丽"]},
+].forEach(item=>lP1.appendChild(HSK.listeningRow(item.n, item.opts)));
+
+const lP2 = document.getElementById('l-p2');
+[
+  {n:7,  opts:["没什么印象了","没有宣传的好","风景非常优美","让她想起童年"]},
+  {n:8,  opts:["不喜欢电影","想去看故宫","哪儿也不想去","走路不太方便"]},
+  {n:9,  opts:["来参加会议","打算住一周","想要大床房","订了商务间"]},
+  {n:10, opts:["以前住在这里","不太喜欢热闹","读的小学很普通","以前常路过这里"]},
+  {n:11, opts:["姐弟","夫妻","朋友","母子"]},
+  {n:12, opts:["设施非常落后","展馆面积很大","刚进行过装修","观众多很拥挤"]},
+  {n:13, opts:["学画已经9年了","大家都抢购他的画","看上去和同龄孩子很不同","9岁就得过许多绘画大奖"]},
+  {n:14, opts:["绘画技巧很成熟","作品色彩很丰富","作品充满表现力","有超人的想象力"]},
+].forEach(item=>lP2.appendChild(HSK.listeningRow(item.n, item.opts)));
+
+window.HSK_PAGE = window.HSK_PAGE || {};
+/* File đáp án mỗi dòng dạng "1C". Chưa có file thì vẫn chọn được, chỉ ẩn thanh chấm điểm. */
+fetch('audio/bai5/dap_an_nghe_bai5.txt')
+  .then(r => r.ok ? r.text() : Promise.reject())
+  .then(text => HSK.parseAnswerKey(text))
+  .catch(() => null)
+  .then(answersDict => {
+    window.HSK_PAGE.listening = HSK.mountListeningQuiz('.tab-section[data-tab="listening"]', answersDict, {
+      questionNums: [1,2,3,4,5,6,7,8,9,10,11,12,13,14],
+      scoreBarId: 'l-score-bar', scoreTxtId: 'l-score', gradeBtnId: 'l-grade', resetBtnId: 'l-reset'
+    });
+  });
+
+/* ---------------- ĐỌC (tự chấm) ---------------- */
+const quiz = new HSK.Quiz({scoreTxtId:'r-score', gradeBtnId:'r-grade', resetBtnId:'r-reset'});
+const B = n => "<span class='blank'>"+n+"</span>";
+
+// Part I — điền chỗ trống trong đoạn văn (15–18)
+const rP1 = document.getElementById('r-p1');
+const clozeBlock = quiz.mountMCQBlock(rP1, 15,
+  "<p>一只狼出去找食物，找了半天都没有收获。偶然经过一户人家，听见房中孩子哭闹，接着"+B(15)+"来一位老太婆的声音：“别哭啦，再不听话，就把你扔出去喂狼吃。”狼一听此言，心中大喜，便守在不远的地方等着。太阳落山了，也没见老太婆把孩子扔出来。晚上，狼已经等得"+B(16)+"了，转到房前想找机会进去，却又听老太婆说：“快睡吧，别怕，狼来了，咱们就把它杀死煮了吃。”狼听了，吓得一溜烟跑回老窝。同伴问它收获"+B(17)+"，它说：“别提了，老太婆说话不算数，"+B(18)+"，不过幸好后来我跑得快。”</p>",
+  "", {A:"递",B:"传",C:"听",D:"飘"}, "B");
+quiz.appendMCQToBlock(clozeBlock, 16, "", {A:"不耐烦",B:"不舒服",C:"不要紧",D:"差不多"}, "A");
+quiz.appendMCQToBlock(clozeBlock, 17, "", {A:"任何",B:"如何",C:"怎么",D:"什么"}, "B");
+quiz.appendMCQToBlock(clozeBlock, 18, "", {A:"就是不让我进门",B:"请我到家里做客",C:"害得我饿了一天",D:"跟我聊起来没完"}, "C");
+
+// Part II — chọn câu đúng với nội dung (19–22)
+const rP2 = document.getElementById('r-p2');
+quiz.mountMCQBlock(rP2, 19,
+  "长江是我国最大最长的河流。它全长约6300公里，流域面积约180万平方公里，仅次于非洲的尼罗河和南美洲的亚马孙河，为世界第三长河。长江发源于中国西部，自西而东横穿中国中部，干流流经11个省、自治区、直辖市。长江干流通航里程达2800多公里，素有“黄金水道”之称。",
+  "", {A:"长江全长2800多公里",B:"长江是重要的航运水道",C:"亚马孙河是世界第三长河",D:"长江因出产黄金而著名"}, "B");
+quiz.mountMCQBlock(rP2, 20,
+  "在中国，风的变化与季节的变化有很大的关系。比如，炎热的夏天，中国大部分地区刮东南风，东南风是从海上刮来的。它带来了温暖潮湿的气流，所以夏季才会温暖、潮湿、多雨。而到了冬天，中国大部分地区开始刮西北风，西北风来自北方寒冷的蒙古、西伯利亚等内陆地区，所以冬季气候通常寒冷、干燥、少雨。",
+  "", {A:"中国的夏季通常会刮西北风",B:"在中国东南风来自内陆地区",C:"在中国不同地区风向也不同",D:"中国的风向变化有季节规律"}, "D");
+quiz.mountMCQBlock(rP2, 21,
+  "世界上面积最大的海洋是太平洋，大约占海洋总面积的一半，它还是水最深的大洋。太平洋中岛屿很多，大大小小共有两万多座。太平洋里生长着许多动物和植物，无论是浮游生物和海底植物，还是鱼类与其他动物，都比其他大洋丰富。太平洋底还有着丰富的石油等矿藏。",
+  "", {A:"太平洋的鱼类有两万多种",B:"最大最小的岛都在太平洋",C:"太平洋里的动植物最丰富",D:"太平洋的石油资源最丰富"}, "C");
+quiz.mountMCQBlock(rP2, 22,
+  "济南的泉水，历史悠久，最早的文字记载可以推到3000多年前。许多文人都对它的声音、颜色、形状、味道进行过描写，留下了许多赞美泉水的诗文。而济南的老百姓住在泉边，喝着这甜美的泉水，自然对泉水充满感激之情，从而也产生出了许多关于泉水的美丽传说。",
+  "", {A:"文人最喜欢描写泉水味道的甜美",B:"三千年前就有许多赞美泉水的诗文",C:"济南的百姓很感激文人对泉水的描写",D:"在百姓中流传着许多有关泉水的传说"}, "D");
+
+// Part III — đoạn văn dài, mỗi đoạn 3 câu (23–25, 26–28)
+const rP3 = document.getElementById('r-p3');
+const IMG = (base, alt) => "<img class='passage-img' src='"+base+".webp' data-base='"+base+"' alt='"+alt+"' onerror='HSK.imgFallback(this)'>";
+
+const block23 = quiz.mountMCQBlock(rP3, 23,
+  "<span class='passage-num'>23~25.</span>" + IMG("images/bai5/r23", "Chiếc thuyền ngọc chạm khắc") +
+  "<p>我的爷爷是个玉雕艺人，一辈子不知做过多少精美的玉器。晚年的时候，爷爷的名声在同行里无人不知，许多富人把拥有一件出自爷爷之手的玉器引为骄傲。</p>" +
+  "<p>爷爷要退休了，他为他的老板干了一辈子，他没有任何过分的想法，只是想得到多年来盼望已久的一块璞玉。爷爷一生为老板赢得了无数财富，这个小小的要求，他觉得老板一定会满足他，却不想老板笑笑说：“我正准备要您帮我做最后一个物件，就用这块璞玉，您用出全部的本领，能把它做成什么就是什么！”</p>" +
+  "<p>爷爷听后，心里暗暗生气。他抱怨老板的无情，自己老了，没有用了，连这点儿情面都不给。爷爷感慨人情冷漠，把全部的失望和恼怒都发到了那块璞玉上，他做了一件非常难看的玉船。</p>" +
+  "<p>把玉船交给老板后爷爷默默地离开，老板紧赶慢赶追上来，态度诚恳地送给爷爷一个锦缎的盒子：“老人家，您为我工作了一辈子，这点儿东西，留给您做个纪念吧！”爷爷打开一看，不禁惭愧地低下了头：盒子里装的正是自己最后做的那件玉船。</p>",
+  "根据本文，晚年时的爷爷：", {A:"非常有名",B:"非常富有",C:"爱抱怨别人",D:"特别骄傲"}, "A");
+quiz.appendMCQToBlock(block23, 24, "要退休时，爷爷有什么打算？", {A:"想痛骂老板一顿",B:"准备做一件玉船",C:"想跟老板要笔钱",D:"希望得到那块璞玉"}, "D");
+quiz.appendMCQToBlock(block23, 25, "关于爷爷的老板，从文中可知：", {A:"非常小气",B:"无情无义",C:"很感谢爷爷",D:"不想让爷爷走"}, "C");
+
+const block26 = quiz.mountMCQBlock(rP3, 26,
+  "<span class='passage-num'>26~28.</span>" + IMG("images/bai5/r26", "Một con hẻm (hồ đồng) ở Bắc Kinh") +
+  "<p>元朝修建北京城时按照严格的规划，城内的主要街道都像棋盘一般整齐划一，井然有序，因此，北京人的方位感特别强。在北京问路，指路的人一般会告诉你路南还是路北。北京的胡同都比较平直规则，大多是东西走向的，而且为了便于通行和采光，元代时规定，城区胡同宽度约为9米，由于两旁房屋低矮，哪怕在冬季，只要是晴天，胡同里便充满阳光。这一规定到明清时就不再那么严格了，这样有些地方就出现了一些不规则的胡同，有长有短，有宽有窄，有横有竖，有直有斜。其中还有许多小胡同，貌不惊人，却留下了许多历史文化印记。</p>" +
+  "<p>前门大栅栏（dàshílànr）原本也是一条普通胡同，宽不过七八米，长不过200多米。然而，这里却是北京最古老的商业中心之一。至今在这里仍汇集着许多著名的老字号商家，如同仁堂中药店、瑞蚨祥绸布店、张一元茶叶店、内联升鞋店……</p>" +
+  "<p>小胡同也有自己的故事。在西城区的大街上，有一条很不起眼的小胡同，叫小羊圈胡同，入口处最窄的地方只有一米多宽，可是谁又能想得到，现代中国的大作家老舍就诞生在这条小胡同里。在老舍的《小人物自述》《四世同堂》《正红旗下》三部著名小说中，他都把小羊圈胡同作为小说主人公生活和活动的舞台，使这条本来名不见经传的小胡同被世人所熟知。小羊圈胡同后来改名为小杨家胡同。</p>",
+  "根据本文，北京人的方位感强是因为：", {A:"城市不大",B:"街道整齐有序",C:"地名很好记",D:"房屋修建有规定"}, "B");
+quiz.appendMCQToBlock(block26, 27, "关于北京的胡同，下列哪项<b>不正确</b>？", {A:"多为东西走向",B:"一般宽约为9米",C:"冬季采光不好",D:"多比较平直规则"}, "C");
+quiz.appendMCQToBlock(block26, 28, "关于小羊圈胡同，从文中可知：", {A:"宽度只有一米多",B:"很不引人注意",C:"是老北京商业中心",D:"老舍在此写了三部小说"}, "B");
+
+quiz.bindButtons();
+
+/* ---------------- VIẾT ---------------- */
+// Part I — sắp xếp từ thành câu (tự chấm, bỏ qua dấu câu)
+const quizW = new HSK.Quiz({scoreTxtId:'w-score', gradeBtnId:'w-grade', resetBtnId:'w-reset'});
+const wP1 = document.getElementById('w-p1');
+quizW.mountSentenceOrder(wP1, 29, ["强烈的","两种颜色","对比","形成了","这"], ["这两种颜色形成了强烈的对比。"]);
+quizW.mountSentenceOrder(wP1, 30, ["两千多年前的","于","皮影戏","西汉时期","产生"], ["皮影戏产生于两千多年前的西汉时期。"]);
+quizW.mountSentenceOrder(wP1, 31, ["往往","能","一个人的心态","脸上的表情","反映"], ["脸上的表情往往能反映一个人的心态。"]);
+quizW.bindButtons();
+
+// Part II — viết đoạn văn khoảng 80 chữ (giáo viên chấm)
+HSK.mountEssay(document.getElementById('w-p2'), 32,
+  ["传说","流传","悠久","优美","充满"], 80,
+  "Bài mẫu tham khảo:<p class='zh'><b>我的家乡是一个历史悠久的小城，城外有一座风景优美的山。山上有一个湖，关于这个湖，当地流传着一个美丽的传说：很久以前，一位仙女在这里洗过澡，所以湖水特别清。每年夏天，很多游客来这里游玩，小城里充满了欢声笑语。</b></p>");
+
+/* Cho trang index.html đọc bài làm khi bấm "Nộp và in kết quả" (listening được gán sau khi tải đáp án) */
+window.HSK_PAGE.lessonId = "bai5";
+window.HSK_PAGE.lessonName = "Bài 5 · 济南的泉水";
+window.HSK_PAGE.reading = quiz;
+window.HSK_PAGE.writingOrder = quizW;
+
+/* ---------------- TỪ VỰNG — 生词 Bài 5 (46 từ) ---------------- */
+const VOCAB_LIST = [
+  {hanzi:"悠久", pinyin:"yōujiǔ", mean:"lâu đời"},
+  {hanzi:"文字", pinyin:"wénzì", mean:"văn tự (ngôn ngữ viết)"},
+  {hanzi:"记载", pinyin:"jìzǎi", mean:"ghi chép, ghi lại"},
+  {hanzi:"形状", pinyin:"xíngzhuàng", mean:"hình dạng"},
+  {hanzi:"描写", pinyin:"miáoxiě", mean:"miêu tả"},
+  {hanzi:"赞美", pinyin:"zànměi", mean:"ca ngợi, ca tụng"},
+  {hanzi:"诗", pinyin:"shī", mean:"thơ"},
+  {hanzi:"老百姓", pinyin:"lǎobǎixìng", mean:"người dân, thường dân"},
+  {hanzi:"充满", pinyin:"chōngmǎn", mean:"chan chứa, tràn ngập"},
+  {hanzi:"感激", pinyin:"gǎnjī", mean:"cảm kích, biết ơn"},
+  {hanzi:"从而", pinyin:"cóng'ér", mean:"do đó, vì vậy"},
+  {hanzi:"产生", pinyin:"chǎnshēng", mean:"sản sinh, xuất hiện"},
+  {hanzi:"传说", pinyin:"chuánshuō", mean:"truyền thuyết"},
+  {hanzi:"善良", pinyin:"shànliáng", mean:"lương thiện, tốt bụng"},
+  {hanzi:"救", pinyin:"jiù", mean:"cứu, cứu giúp"},
+  {hanzi:"晕", pinyin:"yūn", mean:"hôn mê, bất tỉnh"},
+  {hanzi:"龙", pinyin:"lóng", mean:"rồng"},
+  {hanzi:"治（疗）", pinyin:"zhì(liáo)", mean:"điều trị, chữa bệnh"},
+  {hanzi:"玉", pinyin:"yù", mean:"ngọc thạch"},
+  {hanzi:"壶", pinyin:"hú", mean:"ấm, bình"},
+  {hanzi:"抢", pinyin:"qiǎng", mean:"cướp, cướp đoạt"},
+  {hanzi:"埋", pinyin:"mái", mean:"chôn"},
+  {hanzi:"（躲）藏", pinyin:"(duǒ) cáng", mean:"giấu, ẩn núp"},
+  {hanzi:"如今", pinyin:"rújīn", mean:"ngày nay"},
+  {hanzi:"分布", pinyin:"fēnbù", mean:"phân bố"},
+  {hanzi:"天然", pinyin:"tiānrán", mean:"tự nhiên, (thuộc) thiên nhiên"},
+  {hanzi:"优美", pinyin:"yōuměi", mean:"đẹp đẽ, tốt đẹp"},
+  {hanzi:"独特", pinyin:"dútè", mean:"đặc biệt, riêng biệt"},
+  {hanzi:"反映", pinyin:"fǎnyìng", mean:"phản ánh, thể hiện"},
+  {hanzi:"珍珠", pinyin:"zhēnzhū", mean:"ngọc trai, trân châu"},
+  {hanzi:"形成", pinyin:"xíngchéng", mean:"hình thành"},
+  {hanzi:"于", pinyin:"yú", mean:"từ, ở, vào (giới từ)"},
+  {hanzi:"广大", pinyin:"guǎngdà", mean:"rộng, rộng lớn"},
+  {hanzi:"岩石", pinyin:"yánshí", mean:"nham thạch"},
+  {hanzi:"亿", pinyin:"yì", mean:"một trăm triệu"},
+  {hanzi:"石灰岩", pinyin:"shíhuīyán", mean:"đá vôi"},
+  {hanzi:"地区", pinyin:"dìqū", mean:"khu vực, vùng"},
+  {hanzi:"表面", pinyin:"biǎomiàn", mean:"bề mặt, phía ngoài"},
+  {hanzi:"角度", pinyin:"jiǎodù", mean:"góc, độ của góc"},
+  {hanzi:"斜", pinyin:"xié", mean:"xiên, nghiêng"},
+  {hanzi:"为", pinyin:"wéi", mean:"trở thành"},
+  {hanzi:"火成岩", pinyin:"huǒchéngyán", mean:"đá phun trào, đá mác-ma"},
+  {hanzi:"碰", pinyin:"pèng", mean:"đụng, gặp phải"},
+  {hanzi:"挡", pinyin:"dǎng", mean:"chặn, cản"},
+  {hanzi:"地势", pinyin:"dìshì", mean:"địa thế"},
+  {hanzi:"冲", pinyin:"chōng", mean:"xông thẳng lên"}
+];
+HSK.mountVocabGame('#vocab-root', VOCAB_LIST, { lessonId: "bai5" });
+</script>
+</body>
+</html>

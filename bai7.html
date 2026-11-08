@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài 7 · 成语故事两则 | Luyện tập HSK5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<script src="./quiz.js"></script>
+</head>
+<body class="lesson-body">
+
+<div class="lesson-main">
+
+  <div class="lesson-heading">
+    <span class="badge">Bài 7 · 练习册 Workbook</span>
+    <h1><span class="zh">成语故事两则</span></h1>
+    <p>Hai câu chuyện thành ngữ</p>
+  </div>
+
+  <!-- ============ NGHE (Listening) ============ -->
+  <section class="tab-section" data-tab="listening">
+    <section class="card">
+      <div class="section-head">
+        <div class="icon">🎧</div>
+        <h2>Nghe hiểu <span class="zh">一、听力 Listening</span></h2>
+      </div>
+
+      <!-- Part I -->
+      <div class="part">
+        <div class="part-title">第一部分 Part I</div>
+        <div class="part-instructions">第1–6题：请选出正确答案。 — Nghe rồi chọn đáp án đúng.</div>
+        <div class="audio-master">
+          <span class="label">🎧 Audio phần 1 (câu 1–6)</span>
+          <audio controls preload="none" src="audio/bai7/listening_1.mp3"></audio>
+        </div>
+        <div id="l-p1"></div>
+      </div>
+
+      <!-- Part II -->
+      <div class="part">
+        <div class="part-title">第二部分 Part II</div>
+        <div class="part-instructions">第7–14题：请选出正确答案。 — Nghe rồi chọn đáp án đúng.</div>
+        <div class="audio-master">
+          <span class="label">🎧 Audio phần 2 (câu 7–14)</span>
+          <audio controls preload="none" src="audio/bai7/listening_2.mp3"></audio>
+        </div>
+        <div id="l-p2"></div>
+      </div>
+
+      <div class="score-bar" id="l-score-bar" style="display:none;">
+        <div class="score-panel">
+          <span class="txt" id="l-score">0 / 14 câu</span>
+          <button class="btn btn-primary" id="l-grade">Chấm điểm</button>
+          <button class="btn btn-ghost" id="l-reset">Làm lại</button>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ ĐỌC (Reading) ============ -->
+  <section class="tab-section" data-tab="reading">
+    <section class="card">
+      <div class="section-head">
+        <div class="icon">📖</div>
+        <h2>Đọc hiểu <span class="zh">二、阅读 Reading</span></h2>
+      </div>
+      <p class="section-note">Chọn đáp án rồi bấm <b>“Chấm điểm”</b> ở thanh dưới cùng để tự kiểm tra.</p>
+
+      <!-- Part I -->
+      <div class="part">
+        <div class="part-title">第一部分 Part I</div>
+        <div class="part-instructions">第15–18题：请选出正确答案。 — Chọn từ đúng cho mỗi chỗ trống trong đoạn văn.</div>
+        <div id="r-p1"></div>
+      </div>
+
+      <!-- Part II -->
+      <div class="part">
+        <div class="part-title">第二部分 Part II</div>
+        <div class="part-instructions">第19–22题：请选出与试题内容一致的一项。 — Chọn câu đúng với nội dung đoạn văn.</div>
+        <div id="r-p2"></div>
+      </div>
+
+      <!-- Part III -->
+      <div class="part">
+        <div class="part-title">第三部分 Part III</div>
+        <div class="part-instructions">第23–28题：请选出正确答案。 — Đọc đoạn văn và chọn đáp án đúng.</div>
+        <div id="r-p3"></div>
+      </div>
+
+      <div class="score-bar">
+        <div class="score-panel">
+          <span class="txt" id="r-score">0 / 14 câu</span>
+          <button class="btn btn-primary" id="r-grade">Chấm điểm</button>
+          <button class="btn btn-ghost" id="r-reset">Làm lại</button>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ VIẾT (Writing) ============ -->
+  <section class="tab-section" data-tab="writing">
+    <section class="card">
+      <div class="section-head">
+        <div class="icon">✍️</div>
+        <h2>Viết <span class="zh">三、书写 Writing</span></h2>
+      </div>
+
+      <!-- Part I -->
+      <div class="part">
+        <div class="part-title">第一部分 Part I</div>
+        <div class="part-instructions">第29–31题：完成句子。 — Bấm lần lượt các từ để ghép thành câu đúng; bấm vào từ đã chọn để bỏ ra. Xong bấm "Chấm điểm".</div>
+        <div class="example-box">
+          例如：发表　这篇论文　什么时候　是　的<br>
+          <b>→ 这篇论文是什么时候发表的？</b>
+        </div>
+        <div id="w-p1"></div>
+
+        <div class="score-bar">
+          <div class="score-panel">
+            <span class="txt" id="w-score">0 / 3 câu</span>
+            <button class="btn btn-primary" id="w-grade">Chấm điểm</button>
+            <button class="btn btn-ghost" id="w-reset">Làm lại</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part II -->
+      <div class="part">
+        <div class="part-title">第二部分 Part II</div>
+        <div class="part-instructions">第32题：写短文。 — Phần này giáo viên chấm. Viết xong có thể bấm "Xem bài mẫu" để tham khảo.</div>
+        <div id="w-p2"></div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ TỪ VỰNG (Vocabulary game) ============ -->
+  <section class="tab-section" data-tab="vocab">
+    <section class="card">
+      <div class="section-head">
+        <div class="icon">📚</div>
+        <h2>Từ vựng <span class="zh">词汇 Vocabulary</span></h2>
+      </div>
+      <div id="vocab-root"></div>
+    </section>
+  </section>
+
+  <footer class="lesson-footer">
+    Tài liệu tham khảo từ 《HSK标准教程5（上）练习册》.
+  </footer>
+</div>
+
+<script>
+HSK.initTabs('listening');
+
+/* ---------------- NGHE: 2 audio, đáp án gốc trong audio/bai7/dap_an_nghe_bai7.txt ---------------- */
+const lP1 = document.getElementById('l-p1');
+[
+  {n:1, opts:["尾巴","耳朵","身子","牙齿"]},
+  {n:2, opts:["屋子外面","屋子里面","窗户外面","足球场上"]},
+  {n:3, opts:["夫妻交流","招聘面试","记者采访","同事聊天儿"]},
+  {n:4, opts:["金属","石头","木头","塑料"]},
+  {n:5, opts:["他不愿意蹲下","他想被人发现","他准备去那边","他不会被看见"]},
+  {n:6, opts:["支持","肯定","否定","兴奋"]},
+].forEach(item=>lP1.appendChild(HSK.listeningRow(item.n, item.opts)));
+
+const lP2 = document.getElementById('l-p2');
+[
+  {n:7,  opts:["这次考试太难","最近不太认真","考前没有复习","熬夜精神不好"]},
+  {n:8,  opts:["应该开空调","开电扇就够","天气很凉快","电扇很费电"]},
+  {n:9,  opts:["非常重要","不需要保护","失去了生命力","没有办法保护"]},
+  {n:10, opts:["唱歌比赛","射箭比赛","智力问答","机器维修"]},
+  {n:11, opts:["中国当代故事","中国传统故事","外国当代故事","外国传统故事"]},
+  {n:12, opts:["饿死的","冻死的","渴死的","累死的"]},
+  {n:13, opts:["春天","夏天","秋天","冬天"]},
+  {n:14, opts:["天真的","小气的","周到的","坦率的"]},
+].forEach(item=>lP2.appendChild(HSK.listeningRow(item.n, item.opts)));
+
+window.HSK_PAGE = window.HSK_PAGE || {};
+/* File đáp án mỗi dòng dạng "1C". Chưa có file thì vẫn chọn được, chỉ ẩn thanh chấm điểm. */
+fetch('audio/bai7/dap_an_nghe_bai7.txt')
+  .then(r => r.ok ? r.text() : Promise.reject())
+  .then(text => HSK.parseAnswerKey(text))
+  .catch(() => null)
+  .then(answersDict => {
+    window.HSK_PAGE.listening = HSK.mountListeningQuiz('.tab-section[data-tab="listening"]', answersDict, {
+      questionNums: [1,2,3,4,5,6,7,8,9,10,11,12,13,14],
+      scoreBarId: 'l-score-bar', scoreTxtId: 'l-score', gradeBtnId: 'l-grade', resetBtnId: 'l-reset'
+    });
+  });
+
+/* ---------------- ĐỌC (tự chấm) ---------------- */
+const quiz = new HSK.Quiz({scoreTxtId:'r-score', gradeBtnId:'r-grade', resetBtnId:'r-reset'});
+const B = n => "<span class='blank'>"+n+"</span>";
+
+// Part I — điền chỗ trống trong đoạn văn (15–18)
+const rP1 = document.getElementById('r-p1');
+const clozeBlock = quiz.mountMCQBlock(rP1, 15,
+  "<p>昨天的数学考试里有一道很有意思的题：有三张大小一样的卡片，上面画着不同的画。把它们"+B(15)+"从中间剪开，每一张都分成上下两部分。然后把三张卡片的上半部分都"+B(16)+"，把下半部分都放进第二个盒子中。拿起两个盒子摇一摇，打乱"+B(17)+"的卡片，从每个盒子中各"+B(18)+"一张。请问，有多大的可能，两个部分正好可以拼成原来的画？</p>",
+  "", {A:"特别",B:"分别",C:"区别",D:"个别"}, "B");
+quiz.appendMCQToBlock(clozeBlock, 16, "", {A:"藏起来",B:"放进第一个盒子里",C:"放在桌子上",D:"放在一个塑料袋里"}, "B");
+quiz.appendMCQToBlock(clozeBlock, 17, "", {A:"表面",B:"片面",C:"对面",D:"里面"}, "D");
+quiz.appendMCQToBlock(clozeBlock, 18, "", {A:"伸出",B:"挣出",C:"摸出",D:"扶出"}, "C");
+
+// Part II — chọn câu đúng với nội dung (19–22)
+const rP2 = document.getElementById('r-p2');
+quiz.mountMCQBlock(rP2, 19,
+  "西汉时期有一位著名的将军叫李广，他善于骑马射箭，作战勇敢，被称为“飞将军”。他曾经有一次把一块大石头当成了老虎，结果把一整支箭都射进了石头中。士兵们都惊呆了。",
+  "", {A:"李广是唐朝的将军",B:"李广功夫很好，会飞",C:"李广射死了一只老虎",D:"李广把石头当成了老虎"}, "D");
+quiz.mountMCQBlock(rP2, 20,
+  "一个勤劳善良的农民，收获了一个好大好大的西瓜。他把这个西瓜献给国王，国王很高兴，赏给农民一匹高大结实的马。很快，这件事大家都知道了。有个富人心想：献个西瓜，就能得到一匹马；如果献一匹马，国王会赏给我多少金银或者美女呢？于是富人向国王进献了一匹好马。国王同样很高兴，告诉身边的人：“把那个农民献的大西瓜赏给这个献马的人吧。”",
+  "", {A:"农民向国王进献了一匹好马",B:"富人希望能得到更多的赏赐",C:"国王赏给了富人金银和美女",D:"国王对富人的进献很不满意"}, "B");
+quiz.mountMCQBlock(rP2, 21,
+  "甲骨文是刻在龟甲、兽骨上的文字。从1899年开始，大约出土了10万多片甲骨，所见单字总数近5000个，其中只有1000多字能够被准确辨认。现已发现的甲骨文大部分属于商朝时期。最早发现于河南安阳小屯的殷墟，所以又称“殷墟文字”。",
+  "", {A:"甲骨文的“甲”是指龟甲",B:"甲骨文都已被辨认出来了",C:"甲骨文都是商朝时的文字",D:"甲骨文都是在河南发现的"}, "A");
+quiz.mountMCQBlock(rP2, 22,
+  "汉语中的第三人称代词“她”，是现代诗人刘半农首创的。古代汉语中没有“她”字，第三人称不分男女，一律写成“他”。到五四时期，曾在法国留学的刘半农觉得，白话文的兴起，加上翻译介绍外国文学作品的增加，第三人称代词使用频繁，仅仅一个看不出性别的“他”是不够的。于是，1917年，刘半农在翻译一个英国戏剧时，用了自己创造的“她”字。",
+  "", {A:"汉语中的第三人称代词只有一个",B:"刘半农五四时期曾经在英国留学",C:"古汉语中指称女性也用“他”字",D:"“她”字与白话文是同年出现的"}, "C");
+
+// Part III — đoạn văn dài, mỗi đoạn 3 câu (23–25, 26–28)
+const rP3 = document.getElementById('r-p3');
+const IMG = (base, alt) => "<img class='passage-img' src='"+base+".webp' data-base='"+base+"' alt='"+alt+"' onerror='HSK.imgFallback(this)'>";
+
+const block23 = quiz.mountMCQBlock(rP3, 23,
+  "<span class='passage-num'>23~25.</span>" +
+  "<p>古时候有个人，我们暂且叫他张三吧。张三辛苦了大半辈子，存了三百两银子。他心里很高兴，但是也很苦恼，怕有人把他的银子偷走，不知道放在哪里才安全。带在身上吧，不方便；放在抽屉里，觉得不妥当；放在床底下，好像还是容易被偷……他捧着银子，冥思苦想了半天，终于想到了一个自以为巧妙的办法。</p>" +
+  "<p>当天晚上，他趁着夜深人静，找了一个箱子，把银子放在箱子里，然后在自家院子里的墙角边挖了个坑，把箱子埋在里面。埋完了他还是不放心，害怕别人怀疑这里藏了银子，于是就在白纸上写了“此地无银三百两”七个大字，贴在坑边的墙上，这才放心地睡觉去了。</p>" +
+  "<p>这一整天，他心神不宁的样子早就被邻居王二看到了。第二天半夜，王二悄悄溜进他家的院子，把三百两银子都偷走了。王二看着白花花的银子又激动又担心。为了不让张三知道是他偷了银子，便在“此地无银三百两”的下面加上了一句“隔壁王二不曾偷”。</p>" +
+  "<p>后来，人们就用这两句话来形容人自作聪明，本来想要隐藏起来、不让别人知道的事情，反而暴露了。使用时，这两句话也可以简化成“此地无银”。还有“不打自招”“欲盖弥彰”等成语，都有类似的意思。</p>",
+  "张三把银子藏在了：", {A:"抽屉里",B:"床底下",C:"墙里面",D:"地底下"}, "D");
+quiz.appendMCQToBlock(block23, 24, "王二为什么要留下一句话？", {A:"他的书法很好",B:"他怕张三怀疑他",C:"他想让张三来找他",D:"他怕张三不知道他是谁"}, "B");
+quiz.appendMCQToBlock(block23, 25, "下列词语，哪个与“此地无银”的意思<b>无关</b>？", {A:"自作聪明",B:"不打自招",C:"欲盖弥彰",D:"远亲不如近邻"}, "D");
+
+const block26 = quiz.mountMCQBlock(rP3, 26,
+  "<span class='passage-num'>26~28.</span>" + IMG("images/bai7/r26", "Bảng đen ghi pinyin có dấu thanh") +
+  "<p>普通话中有四个声调，通常叫四声，我们依次把它们称为“阴平、阳平、上声（‘上’读第三声）、去声”。</p>" +
+  "<p>标声调首先要读准字音，这样就不会标错第几声。但在读准音的情况下还请记住，标声调有一个规律：所有声调都是标在韵母上的。不过，标在哪个韵母上也有一定要求。</p>" +
+  "<p>根据《汉语拼音方案》的规定，“声调符号标在音节的主要母音上”。主要母音就是主要元音，也就是韵母的韵腹。有a、o、e的韵母，a、o、e就是主要元音；以单元音i、u、ü作为韵母的，i、u、ü就是主要元音。简单地说就是一般按元音的开口大小标调，即a-o-e-i-u-ü的顺序，都是标在开口大的上面。不过韵母iou、uei、uen省略成iu、ui、un后，韵腹o、e不见了，调号标在哪里呢？现在的习惯办法是标在后一个元音字母上，即标在iu的u、ui的i上，un当然标在u上。有句顺口溜可以帮助我们记忆：“有a在，把帽戴；a要不在，o、e戴；要是i、u一起来，谁在后面给谁戴。”</p>" +
+  "<p>汉语中还存在着一种特殊声调，叫作轻声，有时也叫第五声，它也能够起到分辨语义的作用，写汉语拼音时不标调号。也有学者认为“第五声”的说法并不确切。</p>",
+  "汉语拼音中的“阴平”指的是：", {A:"第一声",B:"第二声",C:"第三声",D:"第四声"}, "A");
+quiz.appendMCQToBlock(block26, 27, "根据《汉语拼音方案》，下列拼音中正确的是：", {A:"瞎 xīa",B:"说 shūo",C:"摇 yaó",D:"慧 huì"}, "D");
+quiz.appendMCQToBlock(block26, 28, "关于轻声，下列说法正确的是：", {A:"轻声是四声中的一种",B:"轻声不能区别词义",C:"轻声书写时没有相应的调号",D:"学者们对轻声的看法一致"}, "C");
+
+quiz.bindButtons();
+
+/* ---------------- VIẾT ---------------- */
+// Part I — sắp xếp từ thành câu (tự chấm, bỏ qua dấu câu)
+const quizW = new HSK.Quiz({scoreTxtId:'w-score', gradeBtnId:'w-grade', resetBtnId:'w-reset'});
+const wP1 = document.getElementById('w-p1');
+quizW.mountSentenceOrder(wP1, 29, ["我","了","五六支箭","连续","射"], ["我连续射了五六支箭。"]);
+quizW.mountSentenceOrder(wP1, 30, ["一定能","寻找到","相信","你","最终的结论"], ["相信你一定能寻找到最终的结论。"]);
+quizW.mountSentenceOrder(wP1, 31, ["他说这话","反应过来","我","完全没有","的时候"], ["他说这话的时候，我完全没有反应过来。"]);
+quizW.bindButtons();
+
+// Part II — viết đoạn văn khoảng 80 chữ (giáo viên chấm)
+HSK.mountEssay(document.getElementById('w-p2'), 32,
+  ["智慧","尽力","善于","反应","分别"], 80,
+  "Bài mẫu tham khảo:<p class='zh'><b>“盲人摸象”的故事告诉我们，几个盲人分别摸了大象的一部分，就以为自己知道了大象的样子。生活中，我们也常常只看到事情的一个方面。一个有智慧的人，善于从不同的角度看问题，遇到事情不急着做出反应，而是尽力了解全部情况，再做判断。</b></p>");
+
+/* Cho trang index.html đọc bài làm khi bấm "Nộp và in kết quả" (listening được gán sau khi tải đáp án) */
+window.HSK_PAGE.lessonId = "bai7";
+window.HSK_PAGE.lessonName = "Bài 7 · 成语故事两则";
+window.HSK_PAGE.reading = quiz;
+window.HSK_PAGE.writingOrder = quizW;
+
+/* ---------------- TỪ VỰNG — 生词 Bài 7 (45 từ) ---------------- */
+const VOCAB_LIST = [
+  {hanzi:"成语", pinyin:"chéngyǔ", mean:"thành ngữ"},
+  {hanzi:"则", pinyin:"zé", mean:"mẩu, bản (lượng từ cho bài văn)"},
+  {hanzi:"盲人", pinyin:"mángrén", mean:"người mù"},
+  {hanzi:"摸", pinyin:"mō", mean:"mò, sờ"},
+  {hanzi:"（大）象", pinyin:"(dà) xiàng", mean:"con voi"},
+  {hanzi:"智慧", pinyin:"zhìhuì", mean:"trí tuệ, sự sáng suốt"},
+  {hanzi:"士兵", pinyin:"shìbīng", mean:"binh lính"},
+  {hanzi:"瞎", pinyin:"xiā", mean:"bị mù; mù quáng, vớ vẩn"},
+  {hanzi:"分别", pinyin:"fēnbié", mean:"riêng rẽ, từng người"},
+  {hanzi:"寻找", pinyin:"xúnzhǎo", mean:"tìm"},
+  {hanzi:"牙齿", pinyin:"yáchǐ", mean:"răng"},
+  {hanzi:"胡说", pinyin:"húshuō", mean:"nói bậy, nói bừa"},
+  {hanzi:"尾巴", pinyin:"wěiba", mean:"cái đuôi"},
+  {hanzi:"绳子", pinyin:"shéngzi", mean:"dây thừng"},
+  {hanzi:"平", pinyin:"píng", mean:"bằng phẳng"},
+  {hanzi:"墙", pinyin:"qiáng", mean:"(bức) tường"},
+  {hanzi:"扇子", pinyin:"shànzi", mean:"(cái) quạt"},
+  {hanzi:"片面", pinyin:"piànmiàn", mean:"phiến diện"},
+  {hanzi:"结论", pinyin:"jiélùn", mean:"kết luận"},
+  {hanzi:"精诚所至，金石为开", pinyin:"jīngchéng suǒzhì, jīnshí wéi kāi", mean:"lòng thành cảm động đất trời"},
+  {hanzi:"将军", pinyin:"jiāngjūn", mean:"tướng quân"},
+  {hanzi:"善于", pinyin:"shànyú", mean:"giỏi về, có sở trường"},
+  {hanzi:"称", pinyin:"chēng", mean:"gọi là, tán dương"},
+  {hanzi:"打猎", pinyin:"dǎ liè", mean:"đi săn"},
+  {hanzi:"忽然", pinyin:"hūrán", mean:"thình lình, bỗng nhiên"},
+  {hanzi:"蹲", pinyin:"dūn", mean:"ngồi xổm"},
+  {hanzi:"摇", pinyin:"yáo", mean:"lắc, vẫy"},
+  {hanzi:"不要紧", pinyin:"bú yàojǐn", mean:"không hề gì, không sao cả"},
+  {hanzi:"支", pinyin:"zhī", mean:"cây (lượng từ cho vật dài, mảnh)"},
+  {hanzi:"摆", pinyin:"bǎi", mean:"bày biện, sắp đặt (tư thế)"},
+  {hanzi:"姿势", pinyin:"zīshì", mean:"tư thế"},
+  {hanzi:"全神贯注", pinyin:"quánshén guànzhù", mean:"tập trung tinh thần"},
+  {hanzi:"尽（力）", pinyin:"jìn (lì)", mean:"gắng hết sức"},
+  {hanzi:"反应", pinyin:"fǎnyìng", mean:"phản ứng; sự phản ứng"},
+  {hanzi:"确定", pinyin:"quèdìng", mean:"xác định, khẳng định"},
+  {hanzi:"石头", pinyin:"shítou", mean:"đá"},
+  {hanzi:"连续", pinyin:"liánxù", mean:"liên tục, liên tiếp"},
+  {hanzi:"根", pinyin:"gēn", mean:"rễ cây; chiếc, cái (lượng từ)"},
+  {hanzi:"碎", pinyin:"suì", mean:"vỡ; vụn vặt"},
+  {hanzi:"杆", pinyin:"gǎn", mean:"cán, báng"},
+  {hanzi:"哎", pinyin:"āi", mean:"ái chà, trời ơi (ngạc nhiên, không hài lòng)"},
+  {hanzi:"唉", pinyin:"ài", mean:"ôi, than ôi (thương cảm, hối tiếc)"},
+  {hanzi:"金属", pinyin:"jīnshǔ", mean:"kim loại"},
+  {hanzi:"硬", pinyin:"yìng", mean:"cứng, rắn"},
+  {hanzi:"便", pinyin:"biàn", mean:"thì, liền, bèn"}
+];
+HSK.mountVocabGame('#vocab-root', VOCAB_LIST, { lessonId: "bai7" });
+</script>
+</body>
+</html>
