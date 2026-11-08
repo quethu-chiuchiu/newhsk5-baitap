@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luyện tập HSK5 | HSK标准教程5 练习册</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🀄</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="quiz.js"></script>
+</head>
+<body>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <span class="zh">HSK标准教程5（上）</span>
+      Luyện tập HSK5
+    </div>
+    <!-- nút bài học được thêm bằng JS từ mảng LESSONS bên dưới -->
+  </aside>
+
+  <div class="content-area">
+    <div class="topbar">
+      <div class="tab-group" id="tabGroup">
+        <button class="tab-btn" data-tab="listening">🎧 Nghe</button>
+        <button class="tab-btn" data-tab="reading">📖 Đọc</button>
+        <button class="tab-btn" data-tab="writing">✍️ Viết</button>
+        <button class="tab-btn" data-tab="vocab">📚 Từ vựng</button>
+      </div>
+      <div class="hocvien-bar">
+        <label for="hocvienSelect">Tên học viên:</label>
+        <select id="hocvienSelect"><option value="">— Chọn tên —</option></select>
+        <button type="button" class="btn-submit-result" id="btnSubmitResult">Nộp và in kết quả</button>
+        <span class="hocvien-toast" id="hocvienToast"></span>
+      </div>
+      <span class="current-lesson" id="currentLessonLabel"></span>
+    </div>
+    <div class="frame-wrap">
+      <iframe id="lessonFrame" title="Nội dung bài học"></iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+// Danh sách bài học — thêm bài mới vào đây khi có nội dung.
+// Sidebar chỉ hiện "num" (vd "Bài 1"); nameZh hiện ở thanh trên cùng và phiếu kết quả.
+const LESSONS = [
+  { id:"bai1", num:"Bài 1", nameVi:"Những chi tiết nhỏ của tình yêu", nameZh:"爱的细节", file:"bai1.html", available:true },
+];
+
+const DEFAULT_TAB = "listening";
+let state = { lesson: LESSONS.find(l=>l.available) || LESSONS[0], tab: DEFAULT_TAB };
+
+const sidebar = document.getElementById('sidebar');
+const frame = document.getElementById('lessonFrame');
+const currentLabel = document.getElementById('currentLessonLabel');
+
+function renderSidebar(){
+  LESSONS.forEach(lesson=>{
+    const btn = document.createElement('button');
+    btn.className = 'lesson-btn' + (lesson.available ? '' : ' soon') + (lesson.id === state.lesson.id ? ' active' : '');
+    btn.innerHTML = '<div class="num">'+lesson.num+'</div>';
+    btn.title = lesson.nameZh + ' — ' + lesson.nameVi;
+    if(lesson.available) btn.addEventListener('click', ()=>selectLesson(lesson.id));
+    else btn.disabled = true;
+    btn.dataset.lessonId = lesson.id;
+    sidebar.appendChild(btn);
+  });
+}
+
+function renderTabs(){
+  document.querySelectorAll('.tab-btn').forEach(btn=>{
+    btn.classList.toggle('active', btn.dataset.tab === state.tab);
+    btn.addEventListener('click', ()=>selectTab(btn.dataset.tab));
+  });
+}
+
+function selectLesson(id){
+  const lesson = LESSONS.find(l=>l.id === id);
+  if(!lesson || !lesson.available) return;
+  state.lesson = lesson;
+  document.querySelectorAll('.lesson-btn').forEach(b=>b.classList.toggle('active', b.dataset.lessonId === id));
+  navigate();
+}
+
+function selectTab(tab){
+  state.tab = tab;
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.toggle('active', b.dataset.tab === tab));
+  // Đổi tab trong cùng bài: chỉ đổi #hash để không mất bài đang làm
+  try {
+    const win = frame.contentWindow;
+    if(win && win.location.pathname.endsWith('/' + state.lesson.file)){
+      win.location.hash = tab;
+      return;
+    }
+  } catch(e){}
+  navigate();
+}
+
+function navigate(){
+  frame.src = state.lesson.file + '#' + state.tab;
+  currentLabel.textContent = state.lesson.num + ' · ' + state.lesson.nameZh;
+}
+
+renderSidebar();
+renderTabs();
+navigate();
+
+/* ================================================================
+   Tên học viên + Nộp và in kết quả (in ra giấy hoặc "Lưu thành PDF")
+   Danh sách tên: hocvien/danhsachhocvien.txt (mỗi dòng 1 tên).
+   Không lưu kết quả lên máy chủ hay Google Sheet.
+   ================================================================ */
+const hocvienSelect = document.getElementById('hocvienSelect');
+const btnSubmitResult = document.getElementById('btnSubmitResult');
+const hocvienToast = document.getElementById('hocvienToast');
+const LAST_HOCVIEN_KEY = 'hsk5_last_hocvien';
+
+function lsGet(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function lsSet(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+
+function loadHocVienList(){
+  fetch('hocvien/danhsachhocvien.txt')
+    .then(r => r.ok ? r.text() : Promise.reject())
+    .then(text=>{
+      const names = text.split('\n').map(s=>s.trim()).filter(Boolean);
+      const lastPicked = lsGet(LAST_HOCVIEN_KEY) || '';
+      names.forEach(name=>{
+        const opt = document.createElement('option');
+        opt.value = name;
+        opt.textContent = name;
+        if(name === lastPicked) opt.selected = true;
+        hocvienSelect.appendChild(opt);
+      });
+    })
+    .catch(()=>{
+      const opt = document.createElement('option');
+      opt.value = '';
+      opt.textContent = 'Không tải được danh sách tên';
+      opt.disabled = true;
+      hocvienSelect.appendChild(opt);
+    });
+}
+hocvienSelect.addEventListener('change', ()=>{
+  if(hocvienSelect.value) lsSet(LAST_HOCVIEN_KEY, hocvienSelect.value);
+});
+
+function collectFromIframe(){
+  try {
+    const win = frame.contentWindow;
+    if(!win || !win.HSK || typeof win.HSK.collectResult !== 'function') return null;
+    return win.HSK.collectResult({ lessonId: state.lesson.id, lessonName: state.lesson.num + ' · ' + state.lesson.nameZh });
+  } catch(e){
+    console.error('Không đọc được bài làm:', e);
+    return null;
+  }
+}
+
+function showToast(msg){
+  hocvienToast.textContent = msg;
+  setTimeout(()=>{ if(hocvienToast.textContent === msg) hocvienToast.textContent = ''; }, 4000);
+}
+
+btnSubmitResult.addEventListener('click', ()=>{
+  const hocvien = hocvienSelect.value;
+  if(!hocvien){
+    alert('Vui lòng chọn tên học viên trước khi nộp bài.');
+    return;
+  }
+  const data = collectFromIframe();
+  if(!data){
+    alert('Chưa tải xong nội dung bài học, vui lòng thử lại sau vài giây.');
+    return;
+  }
+  data.hocvien = hocvien;
+  data.timestamp = new Date().toISOString();
+
+  const printWin = window.open('', '_blank', 'width=800,height=900');
+  if(!printWin){
+    alert('Trình duyệt đã chặn cửa sổ mới. Vui lòng cho phép cửa sổ bật lên (pop-up) rồi bấm lại.');
+    return;
+  }
+  printWin.document.write(HSK.buildPrintableHtml(data));
+  printWin.document.close();
+  printWin.focus();
+  setTimeout(()=>{ try{ printWin.print(); }catch(e){} }, 400);
+  showToast('Đã mở phiếu kết quả của ' + hocvien + ' ✓');
+});
+
+loadHocVienList();
+</script>
+</body>
+</html>
