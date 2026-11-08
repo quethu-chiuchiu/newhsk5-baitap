@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài 4 · 子路背米 | Luyện tập HSK5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<script src="./quiz.js"></script>
+</head>
+<body class="lesson-body">
+
+<div class="lesson-main">
+
+  <div class="lesson-heading">
+    <span class="badge">Bài 4 · 练习册 Workbook</span>
+    <h1><span class="zh">子路背米</span></h1>
+    <p>Tử Lộ vác gạo</p>
+  </div>
+
+  <!-- ============ NGHE (Listening) ============ -->
+  <section class="tab-section" data-tab="listening">
+    <section class="card">
+      <div class="section-head">
+        <div class="icon">🎧</div>
+        <h2>Nghe hiểu <span class="zh">一、听力 Listening</span></h2>
+      </div>
+
+      <!-- Part I -->
+      <div class="part">
+        <div class="part-title">第一部分 Part I</div>
+        <div class="part-instructions">第1–6题：请选出正确答案。 — Nghe rồi chọn đáp án đúng.</div>
+        <div class="audio-master">
+          <span class="label">🎧 Audio phần 1 (câu 1–6)</span>
+          <audio controls preload="none" src="audio/bai4/listening_1.mp3"></audio>
+        </div>
+        <div id="l-p1"></div>
+      </div>
+
+      <!-- Part II -->
+      <div class="part">
+        <div class="part-title">第二部分 Part II</div>
+        <div class="part-instructions">第7–14题：请选出正确答案。 — Nghe rồi chọn đáp án đúng.</div>
+        <div class="audio-master">
+          <span class="label">🎧 Audio phần 2 (câu 7–14)</span>
+          <audio controls preload="none" src="audio/bai4/listening_2.mp3"></audio>
+        </div>
+        <div id="l-p2"></div>
+      </div>
+
+      <div class="score-bar" id="l-score-bar" style="display:none;">
+        <div class="score-panel">
+          <span class="txt" id="l-score">0 / 14 câu</span>
+          <button class="btn btn-primary" id="l-grade">Chấm điểm</button>
+          <button class="btn btn-ghost" id="l-reset">Làm lại</button>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ ĐỌC (Reading) ============ -->
+  <section class="tab-section" data-tab="reading">
+    <section class="card">
+      <div class="section-head">
+        <div class="icon">📖</div>
+        <h2>Đọc hiểu <span class="zh">二、阅读 Reading</span></h2>
+      </div>
+      <p class="section-note">Chọn đáp án rồi bấm <b>“Chấm điểm”</b> ở thanh dưới cùng để tự kiểm tra.</p>
+
+      <!-- Part I -->
+      <div class="part">
+        <div class="part-title">第一部分 Part I</div>
+        <div class="part-instructions">第15–18题：请选出正确答案。 — Chọn từ đúng cho mỗi chỗ trống trong đoạn văn.</div>
+        <div id="r-p1"></div>
+      </div>
+
+      <!-- Part II -->
+      <div class="part">
+        <div class="part-title">第二部分 Part II</div>
+        <div class="part-instructions">第19–22题：请选出与试题内容一致的一项。 — Chọn câu đúng với nội dung đoạn văn.</div>
+        <div id="r-p2"></div>
+      </div>
+
+      <!-- Part III -->
+      <div class="part">
+        <div class="part-title">第三部分 Part III</div>
+        <div class="part-instructions">第23–28题：请选出正确答案。 — Đọc đoạn văn và chọn đáp án đúng.</div>
+        <div id="r-p3"></div>
+      </div>
+
+      <div class="score-bar">
+        <div class="score-panel">
+          <span class="txt" id="r-score">0 / 14 câu</span>
+          <button class="btn btn-primary" id="r-grade">Chấm điểm</button>
+          <button class="btn btn-ghost" id="r-reset">Làm lại</button>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ VIẾT (Writing) ============ -->
+  <section class="tab-section" data-tab="writing">
+    <section class="card">
+      <div class="section-head">
+        <div class="icon">✍️</div>
+        <h2>Viết <span class="zh">三、书写 Writing</span></h2>
+      </div>
+
+      <!-- Part I -->
+      <div class="part">
+        <div class="part-title">第一部分 Part I</div>
+        <div class="part-instructions">第29–31题：完成句子。 — Bấm lần lượt các từ để ghép thành câu đúng; bấm vào từ đã chọn để bỏ ra. Xong bấm "Chấm điểm".</div>
+        <div class="example-box">
+          例如：发表　这篇论文　什么时候　是　的<br>
+          <b>→ 这篇论文是什么时候发表的？</b>
+        </div>
+        <div id="w-p1"></div>
+
+        <div class="score-bar">
+          <div class="score-panel">
+            <span class="txt" id="w-score">0 / 3 câu</span>
+            <button class="btn btn-primary" id="w-grade">Chấm điểm</button>
+            <button class="btn btn-ghost" id="w-reset">Làm lại</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part II -->
+      <div class="part">
+        <div class="part-title">第二部分 Part II</div>
+        <div class="part-instructions">第32题：写短文。 — Phần này giáo viên chấm. Viết xong có thể bấm "Xem bài mẫu" để tham khảo.</div>
+        <div id="w-p2"></div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ TỪ VỰNG (Vocabulary game) ============ -->
+  <section class="tab-section" data-tab="vocab">
+    <section class="card">
+      <div class="section-head">
+        <div class="icon">📚</div>
+        <h2>Từ vựng <span class="zh">词汇 Vocabulary</span></h2>
+      </div>
+      <div id="vocab-root"></div>
+    </section>
+  </section>
+
+  <footer class="lesson-footer">
+    Tài liệu tham khảo từ 《HSK标准教程5（上）练习册》.
+  </footer>
+</div>
+
+<script>
+HSK.initTabs('listening');
+
+/* ---------------- NGHE: 2 audio, đáp án gốc trong audio/bai4/dap_an_nghe_bai4.txt ---------------- */
+const lP1 = document.getElementById('l-p1');
+[
+  {n:1, opts:["老板的家","公司办公室","医院的病房","公园西北门"]},
+  {n:2, opts:["大暴雨","雷阵雨","连阴雨","毛毛雨"]},
+  {n:3, opts:["熬夜累的","空调吹的","老公传染的","游泳着凉了"]},
+  {n:4, opts:["丈夫上班迟到","自己忘关窗户","孩子回家淋雨","天气预报不准"]},
+  {n:5, opts:["下楼取包裹","马上赶回家","给快递员开门","给丈夫打电话"]},
+  {n:6, opts:["加班工作","拍电视剧","准备资料","看体育比赛"]},
+].forEach(item=>lP1.appendChild(HSK.listeningRow(item.n, item.opts)));
+
+const lP2 = document.getElementById('l-p2');
+[
+  {n:7,  opts:["公司算错了钱数","经理多加了工资","男的还给了老板","男的花光了工钱"]},
+  {n:8,  opts:["没见过城墙","没去过西安","北京夜景没西安美","北京拆掉了古城墙"]},
+  {n:9,  opts:["了不起","太谦虚","犯了法","真糊涂"]},
+  {n:10, opts:["夏天人太多","景色最好看","淡季门票便宜","冬季才有云海"]},
+  {n:11, opts:["懂古代汉语","学习古典文学","能看中文原著","对唐诗很有研究"]},
+  {n:12, opts:["是英国留学生","在写毕业论文","打算研究唐诗","爱读明清小说"]},
+  {n:13, opts:["父母体弱多病","赶上多年的战争","家里失去了土地","子路不想当农民"]},
+  {n:14, opts:["特别委屈","十分难过","非常生气","很难为情"]},
+].forEach(item=>lP2.appendChild(HSK.listeningRow(item.n, item.opts)));
+
+window.HSK_PAGE = window.HSK_PAGE || {};
+/* File đáp án mỗi dòng dạng "1C". Chưa có file thì vẫn chọn được, chỉ ẩn thanh chấm điểm. */
+fetch('audio/bai4/dap_an_nghe_bai4.txt')
+  .then(r => r.ok ? r.text() : Promise.reject())
+  .then(text => HSK.parseAnswerKey(text))
+  .catch(() => null)
+  .then(answersDict => {
+    window.HSK_PAGE.listening = HSK.mountListeningQuiz('.tab-section[data-tab="listening"]', answersDict, {
+      questionNums: [1,2,3,4,5,6,7,8,9,10,11,12,13,14],
+      scoreBarId: 'l-score-bar', scoreTxtId: 'l-score', gradeBtnId: 'l-grade', resetBtnId: 'l-reset'
+    });
+  });
+
+/* ---------------- ĐỌC (tự chấm) ---------------- */
+const quiz = new HSK.Quiz({scoreTxtId:'r-score', gradeBtnId:'r-grade', resetBtnId:'r-reset'});
+const B = n => "<span class='blank'>"+n+"</span>";
+
+// Part I — điền chỗ trống trong đoạn văn (15–18)
+const rP1 = document.getElementById('r-p1');
+const clozeBlock = quiz.mountMCQBlock(rP1, 15,
+  "<p>父母的言传身教在很大程度上影响着孩子锻炼习惯的养成。家庭体育活动既是学校体育活动的延续和补充，又是孩子"+B(15)+"课余时间的重要方式。体育活动不仅可以促进父母与孩子的交流，还能使家庭更快乐、更和谐、更幸福。</p>" +
+  "<p>全家人一起参加体育活动，通过各种游戏或运动"+B(16)+"运动中各种规则的约束，孩子更易养成遵守规则、尊重他人、公平竞争等"+B(17)+"，并将其带到日常行为中。</p>" +
+  "<p>与父母一起参加体育运动还可以起到良性互动的作用。比如父母与孩子一起爬山、游泳或滑雪，不仅能使孩子身体得到锻炼，还能培养其"+B(18)+"。</p>",
+  "", {A:"抓紧",B:"浪费",C:"度过",D:"节省"}, "C");
+quiz.appendMCQToBlock(clozeBlock, 16, "", {A:"并且",B:"以及",C:"另外",D:"甚至"}, "B");
+quiz.appendMCQToBlock(clozeBlock, 17, "", {A:"特点",B:"能力",C:"脾气",D:"习惯"}, "D");
+quiz.appendMCQToBlock(clozeBlock, 18, "", {A:"勤俭节约的思想",B:"自食其力的能力",C:"战胜困难的精神",D:"对家庭的责任感"}, "C");
+
+// Part II — chọn câu đúng với nội dung (19–22)
+const rP2 = document.getElementById('r-p2');
+quiz.mountMCQBlock(rP2, 19,
+  "半年后，子路要回家了。子路路过镇上，买了一袋米、一块肉、两条鱼，背在后背上。天气非常寒冷，雪地很滑，子路不小心滑了一下，背上的米袋差点儿都被甩出去。他顶着大雪往前走，扶着米袋的双手冻得不行，就停下来暖暖，再继续赶路。",
+  "", {A:"子路冒着大雪赶回了家",B:"子路冻得甩掉了鱼和肉",C:"雪地太滑所以子路摔倒了",D:"子路买的东西多得背不动"}, "A");
+quiz.mountMCQBlock(rP2, 20,
+  "心理学家教会了一只名叫“猎人”的牧羊犬很多英文单词。这意味着，狗对人类语言的理解能力超过人类想象。“猎人”所掌握的1000多个单词里包括“飞盘”“篮球”和“毛绒玩具”等。同时它还能根据作用和功能对这些单词进行分类，这与3岁儿童的能力是一样的。",
+  "", {A:"“猎人”喜欢玩毛绒玩具",B:"“猎人”的智力不如3岁儿童",C:"“猎人”是最理解人类语言的狗",D:"“猎人”会的单词比我们想象的多"}, "D");
+quiz.mountMCQBlock(rP2, 21,
+  "在中国历史上，许多朝代都曾经修建、扩建过长城。保存至今的秦长城已不多见，现在人们看到的大多是明长城。秦始皇时期修建的长城比明长城更靠北，并且大多是用土筑成的。在内蒙古包头一带，人们还可以看到保存较为完整的一段秦长城。",
+  "", {A:"明长城修建在秦长城的北面",B:"长城主要修建于秦代和明代",C:"秦代修建长城时多用土筑成",D:"秦长城仅在内蒙古包头一带"}, "C");
+quiz.mountMCQBlock(rP2, 22,
+  "唐太宗李世民改进科举考试，使大批有德有才的人当上官，为国家出力。他还努力减轻百姓的负担，发展农业生产，使百姓生活有了很大改善。他在位时，唐朝成为一个空前繁荣富强的国家，这一时期被后人称为“贞观之治”。",
+  "", {A:"李世民不重视发展农业生产",B:"百姓们纷纷要求减轻生活负担",C:"通过考试，李世民挑选了很多人才",D:"“贞观之治”是中国社会最繁荣的时期"}, "C");
+
+// Part III — đoạn văn dài, mỗi đoạn 3 câu (23–25, 26–28)
+const rP3 = document.getElementById('r-p3');
+const IMG = (base, alt) => "<img class='passage-img' src='"+base+".webp' data-base='"+base+"' alt='"+alt+"' onerror='HSK.imgFallback(this)'>";
+
+const block23 = quiz.mountMCQBlock(rP3, 23,
+  "<span class='passage-num'>23~25.</span>" + IMG("images/bai4/r23", "Chân dung Khổng Tử") +
+  "<p>在一个炎热的夏日，孔子乘坐马车去往齐国。忽然，从车窗外传来哗哗的水声。孔子说：“天气说变就变。听，山那边下起了雷阵雨，快停车！”</p>" +
+  "<p>随行的一位学生仔细听了听，说：“这是山那边海浪拍打岸边岩石的声音，我是南方人，很熟悉这种声音。”孔子一听是海，非常好奇，因为他从来没见过海。于是，就带着学生们爬上山顶，去看大海究竟是什么样子。望着无边无际的大海，孔子感慨地说：“大海真辽阔呀！做人就应该像大海一样，有辽阔的胸怀呀！”</p>" +
+  "<p>过了一会儿，孔子觉得口渴，这个时候，正巧有一位渔民挑着一桶水走了过来。于是，孔子便走上前去，很客气地要水喝。渔民舀了一瓢清水，递给了孔子。孔子喝过水后，说：“这海水真好喝啊！甘甜清凉。”渔民听后，忍不住笑道：“海水又咸又苦，怎么能喝呢？你们可真是书呆子，连这点儿常识都不懂。”</p>" +
+  "<p>一位学生听渔民这么说，非常生气地说：“你真不知天高地厚，你知道这是谁吗？他可是大名鼎鼎的孔夫子。”</p>" +
+  "<p>“孔夫子怎么啦？孔夫子也不见得样样都懂，刚才他不是想用海水解渴吗？海水是苦的，根本不能喝。我给他的可是清水。”渔民答道。</p>" +
+  "<p>孔子听了，觉得非常惭愧，他沉思了一会儿，很诚恳地对学生们说：“以前，我对你们讲‘有些人一生下来就知道一些事情’，这话是不对的，很多事我也要学习，我们千万不能不懂装懂啊！”</p>",
+  "在路上孔子听到的是什么声音：", {A:"雨声",B:"雷声",C:"海浪声",D:"岩石滚落声"}, "C");
+quiz.appendMCQToBlock(block23, 24, "那位渔民笑话孔子什么？", {A:"喝水的样子",B:"自以为很了不起",C:"书读得太少",D:"不知海水是咸的"}, "D");
+quiz.appendMCQToBlock(block23, 25, "孔子为什么觉得非常惭愧？", {A:"做错事却不改",B:"学生太骄傲了",C:"自己看不起渔夫",D:"自己也有不懂的事"}, "D");
+
+const block26 = quiz.mountMCQBlock(rP3, 26,
+  "<span class='passage-num'>26~28.</span>" +
+  "<p>有个很有钱的大款，他的母亲老了，牙齿全坏掉了，于是他开车带着母亲去镶牙。一进牙科诊所，医生就建议他们镶贵一点儿的好牙，可母亲却要了最便宜的那种。医生不甘心，他一边看着大款儿子，一边耐心地讲解比较好牙与差牙的不同，想让儿子给母亲买好的。可是令医生非常失望的是，这个看起来很有钱的儿子却无动于衷，只顾着自己打电话，根本就不理他。医生没办法，同意了母亲的要求。这时，母亲颤颤悠悠地从口袋里掏出一个布包，一层一层打开，拿出钱交了押金，约好一周后再来镶牙。</p>" +
+  "<p>两人走后，诊所里的人就开始大骂这个大款儿子，说他穿的是名牌，用的是很贵的手机，可却不舍得花钱给母亲装一副好牙。没想到，正当他们气愤地议论时，大款儿子又回来了。他说：“医生，麻烦您给我母亲镶最好的烤瓷牙，费用我来出，多少钱都无所谓。不过您千万不要告诉她实情，我母亲是个非常节俭的人，我不想让她不高兴。”</p>" +
+  "<p>孝敬父母要注意方式，应该让父母踏踏实实地按他们的习惯行事，做子女的要知道怎么才能让他们高兴，不要把自己的方式强加给他们。如果想要特别关照，一定要用心，不要让他们识破，否则好心反而会让他们不高兴。</p>",
+  "母亲为什么要去医院？", {A:"她生了重病",B:"她的儿子病了",C:"她要装假牙",D:"她要预约看病"}, "C");
+quiz.appendMCQToBlock(block26, 27, "儿子开始为什么不理医生？", {A:"他要抽烟",B:"他要打电话",C:"他舍不得为母亲花钱",D:"他不想让母亲发现实情"}, "D");
+quiz.appendMCQToBlock(block26, 28, "上文主要谈的是：", {A:"老人需要假牙",B:"大款儿子不孝顺",C:"什么是真正的孝顺",D:"好心反而会办坏事"}, "C");
+
+quiz.bindButtons();
+
+/* ---------------- VIẾT ---------------- */
+// Part I — sắp xếp từ thành câu (tự chấm, bỏ qua dấu câu)
+const quizW = new HSK.Quiz({scoreTxtId:'w-score', gradeBtnId:'w-grade', resetBtnId:'w-reset'});
+const wP1 = document.getElementById('w-p1');
+quizW.mountSentenceOrder(wP1, 29, ["让她","坏脾气","不少委屈","我的","受了"], ["我的坏脾气让她受了不少委屈。"]);
+quizW.mountSentenceOrder(wP1, 30, ["网上阅读的人","喜欢","8%","只","占到"], ["喜欢网上阅读的人只占到8%。"]);
+quizW.mountSentenceOrder(wP1, 31, ["近千年的","在中国","这是个","民间故事","流传了"], ["这是个在中国流传了近千年的民间故事。"]);
+quizW.bindButtons();
+
+// Part II — viết đoạn văn khoảng 80 chữ (giáo viên chấm)
+HSK.mountEssay(document.getElementById('w-p2'), 32,
+  ["孝顺","惭愧","满足","决心","成就"], 80,
+  "Bài mẫu tham khảo:<p class='zh'><b>工作以后，我取得了一些成就，可是因为太忙，很少回家看父母。上个月回家，我发现他们老了很多，心里非常惭愧。其实父母不需要我买很贵的东西，只要我常回家陪他们吃顿饭、聊聊天，他们就很满足了。我下定决心，以后一定要好好孝顺他们。</b></p>");
+
+/* Cho trang index.html đọc bài làm khi bấm "Nộp và in kết quả" (listening được gán sau khi tải đáp án) */
+window.HSK_PAGE.lessonId = "bai4";
+window.HSK_PAGE.lessonName = "Bài 4 · 子路背米";
+window.HSK_PAGE.reading = quiz;
+window.HSK_PAGE.writingOrder = quizW;
+
+/* ---------------- TỪ VỰNG — 生词 Bài 4 (40 từ + 4 danh từ riêng) ---------------- */
+const VOCAB_LIST = [
+  {hanzi:"背", pinyin:"bēi", mean:"vác, cõng"},
+  {hanzi:"从前", pinyin:"cóngqián", mean:"trước đây, ngày xưa"},
+  {hanzi:"时期", pinyin:"shíqī", mean:"thời kỳ"},
+  {hanzi:"流传", pinyin:"liúchuán", mean:"lưu truyền"},
+  {hanzi:"至今", pinyin:"zhìjīn", mean:"đến nay, đến bây giờ"},
+  {hanzi:"孝敬", pinyin:"xiàojìng", mean:"hiếu kính"},
+  {hanzi:"农民", pinyin:"nóngmín", mean:"nông dân"},
+  {hanzi:"战争", pinyin:"zhànzhēng", mean:"chiến tranh"},
+  {hanzi:"满足", pinyin:"mǎnzú", mean:"thỏa mãn, cảm thấy hài lòng"},
+  {hanzi:"惭愧", pinyin:"cánkuì", mean:"hổ thẹn"},
+  {hanzi:"决心", pinyin:"juéxīn", mean:"quyết tâm; sự quyết tâm"},
+  {hanzi:"委屈", pinyin:"wěiqu", mean:"để ai chịu thiệt thòi; tủi thân"},
+  {hanzi:"打听", pinyin:"dǎting", mean:"hỏi thăm, nghe ngóng"},
+  {hanzi:"主人", pinyin:"zhǔrén", mean:"người chủ"},
+  {hanzi:"结实", pinyin:"jiēshi", mean:"cường tráng, khỏe mạnh"},
+  {hanzi:"勤奋", pinyin:"qínfèn", mean:"siêng năng, cần cù"},
+  {hanzi:"银（子）", pinyin:"yín(zi)", mean:"bạc"},
+  {hanzi:"老实", pinyin:"lǎoshi", mean:"trung thực, thật thà"},
+  {hanzi:"镇", pinyin:"zhèn", mean:"thị trấn"},
+  {hanzi:"后背", pinyin:"hòubèi", mean:"lưng (người)"},
+  {hanzi:"滑", pinyin:"huá", mean:"trơn; trượt"},
+  {hanzi:"甩", pinyin:"shuǎi", mean:"vung, quăng, ném"},
+  {hanzi:"顶", pinyin:"dǐng", mean:"đi ngược"},
+  {hanzi:"扶", pinyin:"fú", mean:"đỡ, vịn"},
+  {hanzi:"不行", pinyin:"bùxíng", mean:"ghê gớm, kinh khủng, cực kỳ (chỉ mức độ)"},
+  {hanzi:"团圆", pinyin:"tuányuán", mean:"sum họp, đoàn tụ"},
+  {hanzi:"去世", pinyin:"qùshì", mean:"qua đời, từ trần"},
+  {hanzi:"国君", pinyin:"guójūn", mean:"vua"},
+  {hanzi:"本领", pinyin:"běnlǐng", mean:"bản lĩnh, năng lực"},
+  {hanzi:"人才", pinyin:"réncái", mean:"người có tài"},
+  {hanzi:"官", pinyin:"guān", mean:"quan"},
+  {hanzi:"物质", pinyin:"wùzhì", mean:"vật chất"},
+  {hanzi:"反而", pinyin:"fǎn'ér", mean:"trái lại, ngược lại"},
+  {hanzi:"诚恳", pinyin:"chéngkěn", mean:"thành khẩn"},
+  {hanzi:"成就", pinyin:"chéngjiù", mean:"thành tựu, thành quả"},
+  {hanzi:"古代", pinyin:"gǔdài", mean:"ngày xưa"},
+  {hanzi:"孝顺", pinyin:"xiàoshùn", mean:"hiếu thảo; thể hiện lòng hiếu thảo"},
+  {hanzi:"美德", pinyin:"měidé", mean:"phẩm chất tốt"},
+  {hanzi:"占", pinyin:"zhàn", mean:"chiếm, giữ"},
+  {hanzi:"食物", pinyin:"shíwù", mean:"thức ăn"},
+  {hanzi:"子路", pinyin:"Zǐlù", mean:"Tử Lộ (học trò của Khổng Tử)"},
+  {hanzi:"春秋", pinyin:"Chūnqiū", mean:"thời Xuân Thu (770–476 TCN)"},
+  {hanzi:"孔子", pinyin:"Kǒngzǐ", mean:"Khổng Tử"},
+  {hanzi:"楚国", pinyin:"Chǔguó", mean:"nước Sở"}
+];
+HSK.mountVocabGame('#vocab-root', VOCAB_LIST, { lessonId: "bai4" });
+</script>
+</body>
+</html>

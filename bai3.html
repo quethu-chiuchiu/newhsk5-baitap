@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài 3 · 人生有选择，一切可改变 | Luyện tập HSK5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<script src="./quiz.js"></script>
+</head>
+<body class="lesson-body">
+
+<div class="lesson-main">
+
+  <div class="lesson-heading">
+    <span class="badge">Bài 3 · 练习册 Workbook</span>
+    <h1><span class="zh">人生有选择，一切可改变</span></h1>
+    <p>Đời người có lựa chọn, mọi thứ đều có thể thay đổi</p>
+  </div>
+
+  <!-- ============ NGHE (Listening) ============ -->
+  <section class="tab-section" data-tab="listening">
+    <section class="card">
+      <div class="section-head">
+        <div class="icon">🎧</div>
+        <h2>Nghe hiểu <span class="zh">一、听力 Listening</span></h2>
+      </div>
+
+      <!-- Part I -->
+      <div class="part">
+        <div class="part-title">第一部分 Part I</div>
+        <div class="part-instructions">第1–6题：请选出正确答案。 — Nghe rồi chọn đáp án đúng.</div>
+        <div class="audio-master">
+          <span class="label">🎧 Audio phần 1 (câu 1–6)</span>
+          <audio controls preload="none" src="audio/bai3/listening_1.mp3"></audio>
+        </div>
+        <div id="l-p1"></div>
+      </div>
+
+      <!-- Part II -->
+      <div class="part">
+        <div class="part-title">第二部分 Part II</div>
+        <div class="part-instructions">第7–14题：请选出正确答案。 — Nghe rồi chọn đáp án đúng.</div>
+        <div class="audio-master">
+          <span class="label">🎧 Audio phần 2 (câu 7–14)</span>
+          <audio controls preload="none" src="audio/bai3/listening_2.mp3"></audio>
+        </div>
+        <div id="l-p2"></div>
+      </div>
+
+      <div class="score-bar" id="l-score-bar" style="display:none;">
+        <div class="score-panel">
+          <span class="txt" id="l-score">0 / 14 câu</span>
+          <button class="btn btn-primary" id="l-grade">Chấm điểm</button>
+          <button class="btn btn-ghost" id="l-reset">Làm lại</button>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ ĐỌC (Reading) ============ -->
+  <section class="tab-section" data-tab="reading">
+    <section class="card">
+      <div class="section-head">
+        <div class="icon">📖</div>
+        <h2>Đọc hiểu <span class="zh">二、阅读 Reading</span></h2>
+      </div>
+      <p class="section-note">Chọn đáp án rồi bấm <b>“Chấm điểm”</b> ở thanh dưới cùng để tự kiểm tra.</p>
+
+      <!-- Part I -->
+      <div class="part">
+        <div class="part-title">第一部分 Part I</div>
+        <div class="part-instructions">第15–18题：请选出正确答案。 — Chọn từ đúng cho mỗi chỗ trống trong đoạn văn.</div>
+        <div id="r-p1"></div>
+      </div>
+
+      <!-- Part II -->
+      <div class="part">
+        <div class="part-title">第二部分 Part II</div>
+        <div class="part-instructions">第19–22题：请选出与试题内容一致的一项。 — Chọn câu đúng với nội dung đoạn văn.</div>
+        <div id="r-p2"></div>
+      </div>
+
+      <!-- Part III -->
+      <div class="part">
+        <div class="part-title">第三部分 Part III</div>
+        <div class="part-instructions">第23–28题：请选出正确答案。 — Đọc đoạn văn và chọn đáp án đúng.</div>
+        <div id="r-p3"></div>
+      </div>
+
+      <div class="score-bar">
+        <div class="score-panel">
+          <span class="txt" id="r-score">0 / 14 câu</span>
+          <button class="btn btn-primary" id="r-grade">Chấm điểm</button>
+          <button class="btn btn-ghost" id="r-reset">Làm lại</button>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ VIẾT (Writing) ============ -->
+  <section class="tab-section" data-tab="writing">
+    <section class="card">
+      <div class="section-head">
+        <div class="icon">✍️</div>
+        <h2>Viết <span class="zh">三、书写 Writing</span></h2>
+      </div>
+
+      <!-- Part I -->
+      <div class="part">
+        <div class="part-title">第一部分 Part I</div>
+        <div class="part-instructions">第29–31题：完成句子。 — Bấm lần lượt các từ để ghép thành câu đúng; bấm vào từ đã chọn để bỏ ra. Xong bấm "Chấm điểm".</div>
+        <div class="example-box">
+          例如：发表　这篇论文　什么时候　是　的<br>
+          <b>→ 这篇论文是什么时候发表的？</b>
+        </div>
+        <div id="w-p1"></div>
+
+        <div class="score-bar">
+          <div class="score-panel">
+            <span class="txt" id="w-score">0 / 3 câu</span>
+            <button class="btn btn-primary" id="w-grade">Chấm điểm</button>
+            <button class="btn btn-ghost" id="w-reset">Làm lại</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part II -->
+      <div class="part">
+        <div class="part-title">第二部分 Part II</div>
+        <div class="part-instructions">第32题：写短文。 — Phần này giáo viên chấm. Viết xong có thể bấm "Xem bài mẫu" để tham khảo.</div>
+        <div id="w-p2"></div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ TỪ VỰNG (Vocabulary game) ============ -->
+  <section class="tab-section" data-tab="vocab">
+    <section class="card">
+      <div class="section-head">
+        <div class="icon">📚</div>
+        <h2>Từ vựng <span class="zh">词汇 Vocabulary</span></h2>
+      </div>
+      <div id="vocab-root"></div>
+    </section>
+  </section>
+
+  <footer class="lesson-footer">
+    Tài liệu tham khảo từ 《HSK标准教程5（上）练习册》.
+  </footer>
+</div>
+
+<script>
+HSK.initTabs('listening');
+
+/* ---------------- NGHE: 2 audio, đáp án gốc trong audio/bai3/dap_an_nghe_bai3.txt ---------------- */
+const lP1 = document.getElementById('l-p1');
+[
+  {n:1, opts:["现在没有打算","刚刚开始准备","还有新的计划","没风时将出发"]},
+  {n:2, opts:["超市买的","自己钓的","别人送的","餐厅做的"]},
+  {n:3, opts:["下雨","晴天","闪电","有雾"]},
+  {n:4, opts:["天气不好","还没下班","还有工作","打不到车"]},
+  {n:5, opts:["她很平静","她受伤了","她来电话了","她没什么问题"]},
+  {n:6, opts:["丈夫做","妻子做","轮着做","一起做"]},
+].forEach(item=>lP1.appendChild(HSK.listeningRow(item.n, item.opts)));
+
+const lP2 = document.getElementById('l-p2');
+[
+  {n:7,  opts:["十分支持","不能理解","觉得很有道理","觉得应该再考虑"]},
+  {n:8,  opts:["没听说","不想去","有考试","要上课"]},
+  {n:9,  opts:["这附近着火了","最近天气不好","这里不能抽烟","抽烟有害健康"]},
+  {n:10, opts:["她姓丁","她生病了","她也是护士","她家里有事"]},
+  {n:11, opts:["做手工","开网店","搞装修","挣大钱"]},
+  {n:12, opts:["有点儿犹豫","很想试一试","准备开始做","觉得不可能"]},
+  {n:13, opts:["宿舍","墨尔本","西班牙","不知道"]},
+  {n:14, opts:["朋友心情不好","朋友需要帮助","他们约好打电话","他说过想去西班牙"]},
+].forEach(item=>lP2.appendChild(HSK.listeningRow(item.n, item.opts)));
+
+window.HSK_PAGE = window.HSK_PAGE || {};
+/* File đáp án mỗi dòng dạng "1C". Chưa có file thì vẫn chọn được, chỉ ẩn thanh chấm điểm. */
+fetch('audio/bai3/dap_an_nghe_bai3.txt')
+  .then(r => r.ok ? r.text() : Promise.reject())
+  .then(text => HSK.parseAnswerKey(text))
+  .catch(() => null)
+  .then(answersDict => {
+    window.HSK_PAGE.listening = HSK.mountListeningQuiz('.tab-section[data-tab="listening"]', answersDict, {
+      questionNums: [1,2,3,4,5,6,7,8,9,10,11,12,13,14],
+      scoreBarId: 'l-score-bar', scoreTxtId: 'l-score', gradeBtnId: 'l-grade', resetBtnId: 'l-reset'
+    });
+  });
+
+/* ---------------- ĐỌC (tự chấm) ---------------- */
+const quiz = new HSK.Quiz({scoreTxtId:'r-score', gradeBtnId:'r-grade', resetBtnId:'r-reset'});
+const B = n => "<span class='blank'>"+n+"</span>";
+
+// Part I — điền chỗ trống trong đoạn văn (15–18)
+const rP1 = document.getElementById('r-p1');
+const clozeBlock = quiz.mountMCQBlock(rP1, 15,
+  "<p>常言道：“人贵有自知之明。”"+B(15)+"真正了解自己，才能为自己的生活与工作做一个恰当的规划，才不至于走弯路和歪路。在我们这个"+B(16)+"，每天接触的信息太多，影响我们的东西太多。所以，想获得成功，首先要有自知之明。自知，就是要认识自己、"+B(17)+"自己。把自知称之为“明”，可见自知是一个人智慧的体现。而自知之明之所以“贵”，则"+B(18)+"人是多么不容易自知。</p>",
+  "", {A:"既然",B:"随着",C:"只要",D:"只有"}, "D");
+quiz.appendMCQToBlock(clozeBlock, 16, "", {A:"时间",B:"时代",C:"时刻",D:"当时"}, "B");
+quiz.appendMCQToBlock(clozeBlock, 17, "", {A:"知道",B:"爱护",C:"了解",D:"盼望"}, "C");
+quiz.appendMCQToBlock(clozeBlock, 18, "", {A:"说明",B:"叙述",C:"告诉",D:"抱怨"}, "A");
+
+// Part II — chọn câu đúng với nội dung (19–22)
+const rP2 = document.getElementById('r-p2');
+quiz.mountMCQBlock(rP2, 19,
+  "傍晚是一家人最舒适的时候。干完活儿，一家人坐在一起，用电脑看看电影，或者聊聊天儿。这样的生活，是翟峰盼望已久的。以前陆地上的夜晚，他们在各自的房间，一家人没有更多的交流。",
+  "", {A:"傍晚是大家干活儿的时间",B:"翟峰喜欢一家人待在一起",C:"他们目前是在陆地上生活",D:"他们一直很注重互相交流"}, "B");
+quiz.mountMCQBlock(rP2, 20,
+  "夫妻俩里里外外地忙碌了一天，累得腰酸背痛，话都不想说。白天各自上班见不着面，晚上回了家也难有交流。长久下去，心灵的沟通越来越少，而相互间的埋怨却越来越多。缺乏交流，爱的花朵就容易被风吹落。",
+  "", {A:"缺乏沟通会导致腰酸背痛",B:"缺乏交流是因为见不着面",C:"夫妻之间的交流对婚姻很重要",D:"生活中的压力主要来自于埋怨"}, "C");
+quiz.mountMCQBlock(rP2, 21,
+  "据调查，虽然网络快速发展，但看电视仍然是城市居民的主要休闲活动。看电视时间与年龄有很密切的关系，按年龄组分，看电视时间的分布呈U字形，即20岁以下者和60岁以上者看电视时间长，20至40岁为最短。休息日和工作日看电视的时间差异也很大，休息日长于工作日，特别是男性，休息日看电视的时间长达2小时21分钟。",
+  "", {A:"网络已经取代了电视",B:"男性比女性更爱看电视",C:"30岁的人比10岁的人看电视时间长",D:"人们在休息日比工作日看电视时间长"}, "D");
+quiz.mountMCQBlock(rP2, 22,
+  "临走的时候，婆婆问了丈夫一句：“路上要看的书都带了吗？”她听了，感到非常意外。这种在很多人眼里可有可无之物，在婆婆和丈夫看来是非常重要的，是必需品，要随身携带。在机场，我们看到的总是拿着手机忙着接听电话、拿着iPad浏览网页的人，生怕漏过一个其实与自己无关的信息。她先生看到这样的情景，常觉得不可思议。",
+  "", {A:"婆婆要求丈夫在路上看书",B:"很多人觉得看书并不重要",C:"手机是所有现代人的必需品",D:"先生很喜欢用iPad浏览网页"}, "B");
+
+// Part III — đoạn văn dài, mỗi đoạn 3 câu (23–25, 26–28)
+const rP3 = document.getElementById('r-p3');
+const IMG = (base, alt) => "<img class='passage-img' src='"+base+".webp' data-base='"+base+"' alt='"+alt+"' onerror='HSK.imgFallback(this)'>";
+
+const block23 = quiz.mountMCQBlock(rP3, 23,
+  "<span class='passage-num'>23~25.</span>" +
+  "<p>“世界那么大，我想去看看。”一封只有10个字的辞职信让河南省实验中学女教师顾少强走红网络。</p>" +
+  "<p>写这封辞职信的时候，顾少强其实并没有太多顾虑，更没想到会引发关注。“当时想到这句话，提笔就写了。我平时就是这个样子，有什么说什么。早知道有这么大影响，我就把字写得好看点儿了！”顾少强开着玩笑说。</p>" +
+  "<p>顾少强认为，辞职只是一个简单的事情，想去看看世界也是内心的真实想法。无论如何，她都会初心不改。“我就是一个特别普通的人，只是希望按照最初的想法走下去，不因为这件事改变最初的想法。”</p>" +
+  "<p>谈到辞职原因，顾少强澄清了一些猜测。担任心理教师的这些年，她得到了很多锻炼与成长，离开只是因为想选择另一种生活方式。“我挺喜欢教师这个职业，觉得当老师挺过瘾的，以后还当老师也有可能。”“不讨厌教师这份职业，辞职并非要摆脱体制束缚。”</p>" +
+  "<p>“每个人都有选择自己生活方式的权利。”在她看来，生活本来简单。“我现在做的都是我想干的事，我现在想晒太阳就去晒太阳，想喝咖啡就去喝一杯，我觉得挺好的。”</p>",
+  "顾少强走红网络的原因是：", {A:"她是河南人",B:"她很想当老师",C:"她的字很好看",D:"她写了一封特别的辞职信"}, "D");
+quiz.appendMCQToBlock(block23, 24, "对于教师这种职业，顾少强的看法是：", {A:"很普通",B:"很无聊",C:"很有意思",D:"要求字写得好"}, "C");
+quiz.appendMCQToBlock(block23, 25, "顾少强辞职的原因是：", {A:"她不喜欢当老师",B:"她觉得被体制束缚了",C:"她想有选择生活方式的自由",D:"她想去晒太阳、喝咖啡"}, "C");
+
+const block26 = quiz.mountMCQBlock(rP3, 26,
+  "<span class='passage-num'>26~28.</span>" + IMG("images/bai3/r26", "Một người đàn ông đang xem tờ báo") +
+  "<p>我爱好剪剪贴贴，自认为这是我养生保健的绝招，因此长年乐此不疲。我这绝招，简单地说，就是将平时在报刊上看到的保健科普小常识剪下来，分门别类地整理到专门的剪贴本上，然后再装订起来。</p>" +
+  "<p>如此剪剪贴贴我已坚持了六七年时间，装订成册的已有150多本。我这些装订成册的剪贴资料集实用性、趣味性于一体，我自认为很有保存价值。为了能存放长久一些，我用硬纸做了封面，并写上“养生保健”的书名，于是，一本本无书号、无封面设计、无价格的“三无保健书”就这样在我手中诞生了。我这些“书”随时供家人和好友翻阅，他们都说，它是最好的家庭医生。</p>" +
+  "<p>退休后，我长期订阅医学科普类报纸，还有《老年文摘》《中国剪报》以及其他各种各样的报纸，其中，我特别喜欢《健康时报》。虽然各类报纸每月的订报费用占我养老金的不少一部分，但读报、剪报是我生活必不可少的内容。我年年订报，天天读报，偶尔还写点儿小文章。功夫不负有心人，几年来我有了不小的收获，总共发表稿件40余篇。</p>" +
+  "<p>剪贴读报使我获得了无尽的精神享受。在这过程中，我看到有关学打太极拳的内容，于是对太极拳产生了浓厚的兴趣，并连续参加了两期培训班。现在，打太极拳成了我每天早晨必修的课程。原先我是个老病号，打了几年太极拳，我所患的胃病、肠炎均不治而愈。</p>",
+  "作者最大的爱好是：", {A:"剪纸",B:"剪报",C:"写书",D:"治病"}, "B");
+quiz.appendMCQToBlock(block26, 27, "关于作者，下列哪项正确？", {A:"他经常感到疲劳",B:"他出版过保健书",C:"他已经退休了",D:"他的胃病治不好"}, "C");
+quiz.appendMCQToBlock(block26, 28, "最适合做上文标题的是：", {A:"三无保健书",B:"最好的家庭医生",C:"我的剪报生活",D:"我爱太极拳"}, "C");
+
+quiz.bindButtons();
+
+/* ---------------- VIẾT ---------------- */
+// Part I — sắp xếp từ thành câu (tự chấm, bỏ qua dấu câu)
+const quizW = new HSK.Quiz({scoreTxtId:'w-score', gradeBtnId:'w-grade', resetBtnId:'w-reset'});
+const wP1 = document.getElementById('w-p1');
+quizW.mountSentenceOrder(wP1, 29, ["我","干活儿","随时","可以","开始"], ["我随时可以开始干活儿。"]);
+quizW.mountSentenceOrder(wP1, 30, ["就是","我","对","新工作的要求","待遇稳定"], ["我对新工作的要求就是待遇稳定。"]);
+quizW.mountSentenceOrder(wP1, 31, ["让","感受到","雨后的彩虹","一种平静","他"], ["雨后的彩虹让他感受到一种平静。"]);
+quizW.bindButtons();
+
+// Part II — viết đoạn văn khoảng 80 chữ (giáo viên chấm)
+HSK.mountEssay(document.getElementById('w-p2'), 32,
+  ["撞","发愁","盼望","太太","未来"], 80,
+  "Bài mẫu tham khảo:<p class='zh'><b>上个月，我开车不小心撞了别人的车，要赔不少钱。那几天我一直在发愁，晚上也睡不着觉。我太太看出了我的心事，笑着对我说：“钱没了可以再挣，人没事就好。”听了她的话，我心里轻松多了。我盼望在未来的日子里，我们能一直这样互相支持。</b></p>");
+
+/* Cho trang index.html đọc bài làm khi bấm "Nộp và in kết quả" (listening được gán sau khi tải đáp án) */
+window.HSK_PAGE.lessonId = "bai3";
+window.HSK_PAGE.lessonName = "Bài 3 · 人生有选择，一切可改变";
+window.HSK_PAGE.reading = quiz;
+window.HSK_PAGE.writingOrder = quizW;
+
+/* ---------------- TỪ VỰNG — 生词 Bài 3 (41 từ + 3 danh từ riêng) ---------------- */
+const VOCAB_LIST = [
+  {hanzi:"人生", pinyin:"rénshēng", mean:"đời người"},
+  {hanzi:"工人", pinyin:"gōngrén", mean:"công nhân"},
+  {hanzi:"稳定", pinyin:"wěndìng", mean:"ổn định"},
+  {hanzi:"待遇", pinyin:"dàiyù", mean:"sự đãi ngộ"},
+  {hanzi:"发愁", pinyin:"fā chóu", mean:"lo âu, buồn rầu"},
+  {hanzi:"平静", pinyin:"píngjìng", mean:"yên ổn, yên ả"},
+  {hanzi:"帆船", pinyin:"fānchuán", mean:"thuyền buồm"},
+  {hanzi:"撞", pinyin:"zhuàng", mean:"đụng, đâm vào"},
+  {hanzi:"艘", pinyin:"sōu", mean:"chiếc, con (lượng từ cho tàu thuyền)"},
+  {hanzi:"航行", pinyin:"hángxíng", mean:"đi tàu thủy, giong thuyền"},
+  {hanzi:"积蓄", pinyin:"jīxù", mean:"tiền để dành; dành dụm"},
+  {hanzi:"二手", pinyin:"èrshǒu", mean:"đã qua sử dụng, second-hand"},
+  {hanzi:"彩虹", pinyin:"cǎihóng", mean:"cầu vồng"},
+  {hanzi:"包括", pinyin:"bāokuò", mean:"bao gồm"},
+  {hanzi:"疯", pinyin:"fēng", mean:"phát điên, hóa điên"},
+  {hanzi:"辞职", pinyin:"cí zhí", mean:"từ chức"},
+  {hanzi:"驾驶", pinyin:"jiàshǐ", mean:"điều khiển"},
+  {hanzi:"轮流", pinyin:"lúnliú", mean:"luân phiên"},
+  {hanzi:"钓", pinyin:"diào", mean:"câu (cá)"},
+  {hanzi:"顿", pinyin:"dùn", mean:"bữa (lượng từ)"},
+  {hanzi:"海鲜", pinyin:"hǎixiān", mean:"hải sản"},
+  {hanzi:"傍晚", pinyin:"bàngwǎn", mean:"hoàng hôn, lúc chạng vạng"},
+  {hanzi:"舒适", pinyin:"shūshì", mean:"dễ chịu, thoải mái"},
+  {hanzi:"干活儿", pinyin:"gàn huór", mean:"làm việc"},
+  {hanzi:"盼望", pinyin:"pànwàng", mean:"trông mong, mong mỏi"},
+  {hanzi:"陆地", pinyin:"lùdì", mean:"đất liền"},
+  {hanzi:"各自", pinyin:"gèzì", mean:"từng người, riêng mình, mỗi"},
+  {hanzi:"勿", pinyin:"wù", mean:"chớ, đừng"},
+  {hanzi:"时刻", pinyin:"shíkè", mean:"thời khắc, thời gian"},
+  {hanzi:"着火", pinyin:"zháo huǒ", mean:"bốc cháy, cháy"},
+  {hanzi:"漏", pinyin:"lòu", mean:"chảy, rỉ"},
+  {hanzi:"雷", pinyin:"léi", mean:"sấm"},
+  {hanzi:"随时", pinyin:"suíshí", mean:"bất cứ lúc nào"},
+  {hanzi:"闪电", pinyin:"shǎndiàn", mean:"chớp"},
+  {hanzi:"击", pinyin:"jī", mean:"đánh"},
+  {hanzi:"拥抱", pinyin:"yōngbào", mean:"ôm chặt"},
+  {hanzi:"海里", pinyin:"hǎilǐ", mean:"hải lý"},
+  {hanzi:"台阶", pinyin:"táijiē", mean:"bậc thềm"},
+  {hanzi:"未来", pinyin:"wèilái", mean:"tương lai"},
+  {hanzi:"太太", pinyin:"tàitai", mean:"vợ"},
+  {hanzi:"时代", pinyin:"shídài", mean:"thời đại"},
+  {hanzi:"翟峰", pinyin:"Zhái Fēng", mean:"Trác Phong (tên người)"},
+  {hanzi:"澳洲", pinyin:"Àozhōu", mean:"Úc"},
+  {hanzi:"新西兰", pinyin:"Xīnxīlán", mean:"New Zealand, Tân Tây Lan"}
+];
+HSK.mountVocabGame('#vocab-root', VOCAB_LIST, { lessonId: "bai3" });
+</script>
+</body>
+</html>
